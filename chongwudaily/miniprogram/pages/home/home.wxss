@@ -1,0 +1,110 @@
+/* miniprogram/pages/home/home.wxss */
+
+.background {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.function-pick {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pickone {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hezi {
+    height:15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yimiao_img {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 15rpx 0 15rpx 0;
+
+}
+
+.quchong_img {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 15rpx 0 15rpx 0;
+}
+
+.tijian_img {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 15rpx 0 15rpx 0;
+}
+
+.picktwo {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.xizao_img {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 15rpx 0 15rpx 0;
+}
+
+.meirong_img {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 15rpx 0 15rpx 0;
+}
+
+.yaoyu_img {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 15rpx 0 15rpx 0;
+}
+
+.fenge {
+    width: 100vw;
+    height: 3vh;
+    background-color: rgba(153, 153, 153, 0.3);
+}
+
+.pedia {
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mao {
+    display: flex;
+}
+
+.maoke {
+    width: 45vw;
+    height: 7vh;
+    margin: 2vh 2vw 2vh 2vw;
+    background-color: rgba(153, 153, 153, 0.3);
+}
+
+.gou {
+    display: flex;
+}
+
+.gouke {
+    width: 45vw;
+    height: 7vh;
+    margin: 2vh 2vw 2vh 2vw;
+    background-color: rgba(153, 153, 153, 0.3);
+}
