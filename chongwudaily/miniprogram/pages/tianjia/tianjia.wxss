@@ -1,0 +1,110 @@
+/* miniprogram/pages/tianjia/tianjia.wxss */
+.neirong {
+    width: 80vw;
+    height: 70vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.neirong2 {
+    width: 63vw;
+}
+
+.dangan {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1vh 0 1vh 0;
+}
+
+.leixing {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.mao_img {
+    margin: 0 0 0 6vw;
+    width: 70rpx;
+    height: 70rpx;
+}
+
+
+.xingbie {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.wangzi {
+    width: 19vw;
+    height: 4vh;
+    background-color: aqua;
+    font-size: 14px;
+    margin: 0 0 0 6vw;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nianling {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.nian_sui {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 2vw;
+}
+
+
+.tizhong {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.ti_kg {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 2vw;
+}
+
+.pinzhong {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.maose {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nicheng {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.wancheng {
+    width: 63vw;
+    height: 5vh;
+    background-color: aqua;
+    font-size: 14px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh 0 0 0;
+}

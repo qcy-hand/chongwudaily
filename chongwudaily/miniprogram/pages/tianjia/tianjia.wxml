@@ -1,0 +1,59 @@
+<!-- miniprogram/pages/tianjia/tianjia.wxml -->
+<van-popup show="{{ dang_popup }}" close-on-click-overlay="{{false}}" round closeable bind:close="closetan">
+    <view class="neirong">
+        <view class="dangan">
+            <li style="font-size:16px;">宠物档案</li>
+        </view>
+        <view class="neirong2">
+            <view class="leixing">
+                <li style="font-size:14px;">类型</li>
+                <image src="../../img/mao.png" class="mao_img"></image>
+                <image src="../../img/gou.png" class="mao_img"></image>
+            </view>
+            <view class="xingbie">
+                <li style="font-size:14px;">性别</li>
+                <view class="wangzi">小王子</view>
+                <view class="wangzi">小公主</view>
+            </view>
+            <view class="nianling">
+                <li style="font-size:14px;">年龄</li>
+                <view class="nian_sui">
+                    <van-field value="{{ value }}" custom-style="width:19vw" placeholder="输入" border="{{ false }}" />
+                    <li style="font-size:14px;">岁</li>
+                </view>
+                <view class="nian_sui">
+                    <van-field value="{{ value }}" custom-style="width:19vw" placeholder="输入" border="{{ false }}" />
+                    <li style="font-size:14px;">月</li>
+                </view>
+            </view>
+            <view class="tizhong">
+                <li style="font-size:14px;">体重</li>
+                <view class="ti_kg">
+                    <van-field value="{{ value }}" custom-style="width:19vw" placeholder="输入" border="{{ false }}" />
+                    <li style="font-size:14px;">Kg</li>
+                </view>
+            </view>
+            <view class="pinzhong">
+                <li style="font-size:14px;">品种</li>
+                <view style="margin: 0 0 0 2vw;">
+                    <van-field value="{{ value }}" custom-style="width:38vw" placeholder="输入" border="{{ false }}" />
+                </view>
+            </view>
+            <view class="maose">
+                <li style="font-size:14px;">毛色</li>
+                <view style="margin: 0 0 0 2vw;">
+                    <van-field value="{{ value }}" custom-style="width:38vw" placeholder="输入" border="{{ false }}" />
+                </view>
+            </view>
+            <view class="nicheng">
+                <li style="font-size:14px;">昵称</li>
+                <view style="margin: 0 0 0 2vw;">
+                    <van-field value="{{ value }}" custom-style="width:38vw" autosize placeholder="输入" border="{{ false }}" />
+                </view>
+            </view>
+
+            
+        </view>
+        <view class="wancheng">完成</view>
+    </view>
+</van-popup>

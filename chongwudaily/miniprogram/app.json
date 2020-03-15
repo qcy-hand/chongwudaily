@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/tianjia/tianjia",
     "pages/home/home"
+    
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
