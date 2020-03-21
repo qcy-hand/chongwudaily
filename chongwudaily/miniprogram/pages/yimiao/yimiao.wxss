@@ -1,0 +1,30 @@
+/* miniprogram/pages/yimiao/yimiao.wxss */
+.con_yimiao {
+    background-color: #ffffff;
+}
+
+.value-class {
+    flex: none !important;
+}
+
+.miao {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 3vh 0 0 0;
+
+}
+
+.push_miao {
+    width: 90vw;
+    height: 75rpx;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 75rpx;
+    color: #ffffff;
+    background: linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0));
+
+}

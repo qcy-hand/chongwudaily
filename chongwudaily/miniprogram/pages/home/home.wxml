@@ -3,30 +3,30 @@
     <view class="function-pick">
     <view style="height:3vh;"></view>
         <view class="pickone">
-            <view class="hezi">
+            <view class="hezi" bindtap="toyimiao">
                 <image src="../../img/yimiao.png" class="yimiao_img"></image>
                 <li style="font-size:14px;">疫苗</li>
             </view>
-            <view class="hezi">
+            <view class="hezi" bindtap="toquchong">
                <image src="../../img/quchong.png" class="quchong_img"></image>
                 <li style="font-size:14px;">驱虫</li>
             </view>
-            <view class="hezi">
+            <view class="hezi" bindtap="totijian">
                <image src="../../img/tijian.png" class="tijian_img"></image>
                 <li style="font-size:14px;">体检</li>
             </view>
         </view>
          <view style="height:3vh;"></view>
         <view class="picktwo">
-            <view class="hezi">
+            <view class="hezi" bindtap="toxizao">
                <image src="../../img/xizao.png" class="xizao_img"></image>
                 <li style="font-size:14px;">洗澡</li>
             </view>
-            <view class="hezi">
+            <view class="hezi" bindtap="tomeirong">
                <image src="../../img/meirong.png" class="meirong_img"></image>
                 <li style="font-size:14px;">美容</li>
             </view>
-            <view class="hezi">
+            <view class="hezi" bindtap="toyaoyu">
                <image src="../../img/yaoyu.png" class="yaoyu_img"></image>
                 <li style="font-size:14px;">药浴</li>
             </view>

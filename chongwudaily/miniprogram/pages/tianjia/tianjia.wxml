@@ -1,5 +1,5 @@
 <!-- miniprogram/pages/tianjia/tianjia.wxml -->
-<van-popup show="{{ dang_popup }}" close-on-click-overlay="{{false}}" round closeable bind:close="closetan">
+<van-popup show="{{ dang_popup }}" overlay-style="background-color:rgba(0,0,0,0.5)" close-on-click-overlay="{{false}}" round closeable bind:close="closetan">
     <view class="neirong">
         <view class="dangan">
             <li style="font-size:16px;">宠物档案</li>

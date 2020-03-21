@@ -10,6 +10,36 @@ Page({
   data: {
 
   },
+  toyimiao: function () {
+    wx.navigateTo({
+      url: '../yimiao/yimiao'
+    });
+  },
+  toquchong: function () {
+    wx.navigateTo({
+      url: '../quchong/quchong'
+    });
+  },
+  totijian: function () {
+    wx.navigateTo({
+      url: '../tijian/tijian'
+    });
+  },
+  toxizao: function () {
+    wx.navigateTo({
+      url: '../xizao/xizao'
+    });
+  },
+  tomeirong: function () {
+    wx.navigateTo({
+      url: '../meirong/meirong'
+    });
+  },
+  toyaoyu: function () {
+    wx.navigateTo({
+      url: '../yaoyu/yaoyu'
+    });
+  },
 
   /**
    * 生命周期函数--监听页面加载
