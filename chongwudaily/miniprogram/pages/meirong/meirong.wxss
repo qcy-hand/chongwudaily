@@ -6,7 +6,18 @@
 .value-class {
     flex: none !important;
 }
-
+.xuan{
+    margin: 3vh 0 3vh 0;
+}
+.xi{
+    margin: 1.5vh 0 3vh 0;
+}
+.xia{
+    margin: 1.5vh 0 3vh 0;
+}
+.ti{
+    margin: 1.5vh 0 1.5vh 0;
+}
 .mei {
     width: 100vw;
     height: 7vh;
@@ -18,11 +29,11 @@
 
 }
 .push_mei {
-    width: 90vw;
-    height: 75rpx;
+    width: 670rpx;
+    height: 80rpx;
     border-radius: 50px;
     text-align: center;
-    line-height: 75rpx;
+    line-height: 80rpx;
     color: #ffffff;
     background: linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0));
 

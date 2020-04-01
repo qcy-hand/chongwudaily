@@ -1,59 +1,65 @@
 <!-- miniprogram/pages/tianjia/tianjia.wxml -->
-<van-popup show="{{ dang_popup }}" overlay-style="background-color:rgba(0,0,0,0.5)" close-on-click-overlay="{{false}}" round closeable bind:close="closetan">
+<view class="con_tian">
     <view class="neirong">
         <view class="dangan">
-            <li style="font-size:16px;">宠物档案</li>
+            <van-uploader file-list="{{ fileList }}" max-count="1" bind:after-read="afterRead">
+                <view class="tou_pic">
+                    <image src="../../img/j1.png" class="jia_pic"></image>
+                </view>
+            </van-uploader>
         </view>
-        <view class="neirong2">
-            <view class="leixing">
-                <li style="font-size:14px;">类型</li>
-                <image src="../../img/mao.png" class="mao_img"></image>
-                <image src="../../img/gou.png" class="mao_img"></image>
-            </view>
-            <view class="xingbie">
-                <li style="font-size:14px;">性别</li>
-                <view class="wangzi">小王子</view>
-                <view class="wangzi">小公主</view>
-            </view>
-            <view class="nianling">
-                <li style="font-size:14px;">年龄</li>
-                <view class="nian_sui">
-                    <van-field value="{{ value }}" custom-style="width:19vw" placeholder="输入" border="{{ false }}" />
-                    <li style="font-size:14px;">岁</li>
-                </view>
-                <view class="nian_sui">
-                    <van-field value="{{ value }}" custom-style="width:19vw" placeholder="输入" border="{{ false }}" />
-                    <li style="font-size:14px;">月</li>
-                </view>
-            </view>
-            <view class="tizhong">
-                <li style="font-size:14px;">体重</li>
-                <view class="ti_kg">
-                    <van-field value="{{ value }}" custom-style="width:19vw" placeholder="输入" border="{{ false }}" />
-                    <li style="font-size:14px;">Kg</li>
-                </view>
-            </view>
-            <view class="pinzhong">
-                <li style="font-size:14px;">品种</li>
-                <view style="margin: 0 0 0 2vw;">
-                    <van-field value="{{ value }}" custom-style="width:38vw" placeholder="输入" border="{{ false }}" />
-                </view>
-            </view>
-            <view class="maose">
-                <li style="font-size:14px;">毛色</li>
-                <view style="margin: 0 0 0 2vw;">
-                    <van-field value="{{ value }}" custom-style="width:38vw" placeholder="输入" border="{{ false }}" />
-                </view>
-            </view>
-            <view class="nicheng">
-                <li style="font-size:14px;">昵称</li>
-                <view style="margin: 0 0 0 2vw;">
-                    <van-field value="{{ value }}" custom-style="width:38vw" autosize placeholder="输入" border="{{ false }}" />
-                </view>
-            </view>
-
-            
-        </view>
-        <view class="wancheng">完成</view>
     </view>
-</van-popup>
+    <view class="neirong2">
+        <view class="leixing">
+            宠物类型
+            <view class="lei_pic">
+                <image src="../../img/mao.png" wx:if="{{mao_cli}}" bindtap="changemao" class="mao_img"></image>
+                <image src="../../img/mao2.png" wx:else class="mao_img"></image>
+                <image src="../../img/gou.png" wx:if="{{gou_cli}}" bindtap="changegou" class="gou_img"></image>
+                <image src="../../img/gou2.png" wx:else class="gou_img"></image>
+            </view>
+        </view>
+        <view class="xingbie">
+            宠物性别
+            <view class="bie_he">
+                <view wx:if="{{zi_cli}}" bindtap="changezi" class="wangzi">小王子</view>
+                <view wx:else class="wangzi_c">小王子</view>
+                <view wx:if="{{zhu_cli}}" bindtap="changezhu" class="gongzhu">小公主</view>
+                <view wx:else class="gongzhu_c">小公主</view>
+            </view>
+        </view>
+        <view class="jueyu">
+            是否绝育
+            <view class="jue_he">
+                <view wx:if="{{yijue_cli}}" bindtap="change_yi" class="yijue">已绝育</view>
+                <view wx:else class="yijue_c">已绝育</view>
+                <view wx:if="{{weijue_cli}}" bindtap="change_wei" class="weijue">未绝育</view>
+                <view wx:else class="weijue_c">未绝育</view>
+            </view>
+        </view>
+    </view>
+    <view class="nianling">
+        <van-cell title="出生年月" clickable border="{{ false }}" bind:click="open_nian" />
+        <van-popup show="{{ nian_popup }}" overlay-style="background-color:rgba(0,0,0,0.5)" close-on-click-overlay="{{false}}" position="bottom" round bind:click-overlay="close_nian">
+            <van-datetime-picker type="year-month" value="{{ currentDate }}" min-date="{{ minDate }}" bind:input="nianInput" />
+        </van-popup>
+    </view>
+    <view class="maose">
+        <van-cell title="宠物毛色" clickable border="{{ false }}" bind:click="open_maose" />
+        <van-popup show="{{ maose_popup }}" overlay-style="background-color:rgba(0,0,0,0.5)" close-on-click-overlay="{{false}}" position="bottom" round bind:click-overlay="close_maose">
+            <van-picker show-toolbar columns="{{ maose_columns }}" bind:cancel="maose_Cancel" bind:confirm="maose_Confirm" />
+        </van-popup>
+    </view>
+    <view class="pinzhong">
+        <van-field value="{{ pz_value }}" label="宠物品种" autosize placeholder="请输入" input-align="right" border="{{ false }}" />
+    </view>
+    <view class="tizhong">
+        <van-field value="{{ tz_value }}" label="宠物体重" autosize placeholder="请输入" input-align="right" border="{{ false }}" />
+    </view>
+    <view class="nicheng">
+        <van-field value="{{ mz_value }}" label="宠物名字" autosize placeholder="请输入" input-align="right" border="{{ false }}" />
+    </view>
+    <view class="neirong">
+        <view class="wancheng">完 成</view>
+    </view>
+</view>

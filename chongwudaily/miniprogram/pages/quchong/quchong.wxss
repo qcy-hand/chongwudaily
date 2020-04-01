@@ -7,6 +7,28 @@
     flex: none !important;
 }
 
+.xuan{
+    margin: 3vh 0 3vh 0;
+}
+.mu{
+    margin: 1.5vh 0 3vh 0;
+}
+.shi{
+    margin: 1.5vh 0 3vh 0;
+}
+.hou{
+    margin: 1.5vh 0 3vh 0;
+}
+.xia{
+    margin: 1.5vh 0 3vh 0;
+}
+
+.ti_jian{
+    margin: 1.5vh 0 1.5vh 0;
+}
+.ti{
+    margin: 1.5vh 0 1.5vh 0;
+}
 .qu {
     width: 100vw;
     height: 7vh;
@@ -18,11 +40,11 @@
 
 }
 .push_qu {
-    width: 90vw;
-    height: 75rpx;
+    width: 670rpx;
+    height: 80rpx;
     border-radius: 50px;
     text-align: center;
-    line-height: 75rpx;
+    line-height: 80rpx;
     color: #ffffff;
     background: linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0));
 

@@ -1,108 +1,226 @@
 /* miniprogram/pages/tianjia/tianjia.wxss */
+.con_tian {
+    color: #333;
+    background-color: #ffffff;
+}
+
 .neirong {
-    width: 80vw;
-    height: 70vh;
+    width: 100vw;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 .neirong2 {
-    width: 63vw;
+    padding: 0 16px 0 16px;
 }
 
 .dangan {
-    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 1vh 0 1vh 0;
+    margin: 2vh 0 2vh 0;
+}
+
+.tou_pic {
+    width: 150rpx;
+    height: 150rpx;
+    margin: 2vh 0 2vh 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid 1rpx #707070;
+
+}
+
+.jia_pic {
+    width: 60rpx;
+    height: 60rpx;
+
 }
 
 .leixing {
-    height: 7vh;
+    height: 9vh;
+    line-height: 9vh;
+    font-size: 14px;
+    color: #333;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.lei_pic {
+    display: flex;
 }
 
 .mao_img {
-    margin: 0 0 0 6vw;
-    width: 70rpx;
-    height: 70rpx;
+    width: 75rpx;
+    height: 75rpx;
+    margin: 0 95rpx 0 0;
 }
 
+.gou_img {
+    width: 75rpx;
+    height: 70rpx;
+    margin: 0 35rpx 0 0;
+}
 
 .xingbie {
-    height: 7vh;
+    height: 9vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 9vh;
+    color: #333;
+}
+
+.bie_he {
+    display: flex;
 }
 
 .wangzi {
-    width: 19vw;
-    height: 4vh;
-    background-color: aqua;
+    width: 145rpx;
+    height: 60rpx;
+    background-color: #ffffff;
     font-size: 14px;
-    margin: 0 0 0 6vw;
     border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    margin: 0 25rpx 0 0;
+}
+
+.wangzi_c {
+    width: 145rpx;
+    height: 60rpx;
+    background-color: #ff7f50;
+    font-size: 14px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25rpx 0 0;
+}
+
+.gongzhu {
+    width: 145rpx;
+    height: 60rpx;
+    background-color: #ffffff;
+    font-size: 14px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gongzhu_c {
+    width: 145rpx;
+    height: 60rpx;
+    background-color: #ff7f50;
+    font-size: 14px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.jueyu {
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 9vh;
+    color: #333;
+}
+
+.jue_he {
+    display: flex;
+}
+
+.yijue {
+    width: 145rpx;
+    height: 60rpx;
+    background-color: #ffffff;
+    font-size: 14px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 25rpx 0 0;
+}
+
+.yijue_c {
+    width: 145rpx;
+    height: 60rpx;
+    background-color: #ff7f50;
+    font-size: 14px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 25rpx 0 0;
+}
+
+.weijue {
+    width: 145rpx;
+    height: 60rpx;
+    background-color: #ffffff;
+    font-size: 14px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.weijue_c {
+    width: 145rpx;
+    height: 60rpx;
+    background-color: #ff7f50;
+    font-size: 14px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .nianling {
-    height: 7vh;
-    display: flex;
-    align-items: center;
-}
-
-.nian_sui {
-    display: flex;
-    align-items: center;
-    margin: 0 0 0 2vw;
-}
-
-
-.tizhong {
-    height: 7vh;
-    display: flex;
-    align-items: center;
-}
-
-.ti_kg {
-    display: flex;
-    align-items: center;
-    margin: 0 0 0 2vw;
-}
-
-.pinzhong {
-    height: 7vh;
-    display: flex;
-    align-items: center;
+    margin: 1.07vh 0 2.14vh 0;
 }
 
 .maose {
-    height: 7vh;
-    display: flex;
-    align-items: center;
+    margin: 1.07vh 0 2.14vh 0;
 }
 
+.pinzhong {
+    margin: 1.07vh 0 2.14vh 0;
+}
 
+.tizhong {
+    margin: 1.07vh 0 2.14vh 0;
+
+}
 
 .nicheng {
-    height: 7vh;
-    display: flex;
-    align-items: center;
+    margin: 1.07vh 0 2.14vh 0;
 }
 
 .wancheng {
-    width: 63vw;
-    height: 5vh;
+    width: 666rpx;
+    height: 77rpx;
     background-color: aqua;
     font-size: 14px;
-    border-radius: 25px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,0 +1,5 @@
+/* miniprogram/pages/dangan/dangan.wxss */
+.dang_an{
+    width: 100vw;
+    
+}

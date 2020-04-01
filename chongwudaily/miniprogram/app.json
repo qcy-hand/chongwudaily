@@ -6,7 +6,9 @@
     "van-popup": "@vant/weapp/popup/index",
     "van-switch": "@vant/weapp/switch/index",
     "van-picker": "@vant/weapp/picker/index",
-    "van-datetime-picker": "@vant/weapp/datetime-picker/index"
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-index-bar": "@vant/weapp/index-bar/index",
+    "van-index-anchor": "@vant/weapp/index-anchor/index"
   },
   "pages": [
     "pages/home/home",
@@ -16,7 +18,8 @@
     "pages/tijian/tijian",
     "pages/xizao/xizao",
     "pages/meirong/meirong",
-    "pages/yaoyu/yaoyu"
+    "pages/yaoyu/yaoyu",
+    "pages/dangan/dangan"
   ],
   "window": {
     "backgroundColor": "#ffffff",
