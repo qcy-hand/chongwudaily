@@ -9,7 +9,7 @@ Page({
     checked: false,
     fileList: [],
     chong_columns: ['张三', '李四', '王老五'],
-    pai_columns: ['英特威',  '百斯特', '梅里亚', '妙三多', '辉瑞','富道', '维克'],
+    pai_columns: ['常规',  '血液', '粪便', 'X光', '超声'],
     zhu_popup:false,
     minHour: 10,
     maxHour: 20,

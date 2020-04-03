@@ -1,6 +1,5 @@
 <!-- miniprogram/pages/meirong/meirong.wxml -->
 <view class="con_yimei">
-    <van-icon name="close" />
     <view class="xuan">
         <van-cell title="选择宠物" value="" clickable center bind:click="openchong" border="{{ false }}" />
     </view>

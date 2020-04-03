@@ -1,6 +1,5 @@
 <!-- miniprogram/pages/tijian/tijian.wxml -->
 <view class="con_yijian">
-    <van-icon name="close" />
     <view class="xuan">
         <van-cell title="选择宠物" value="" clickable center bind:click="openchong" border="{{ false }}" />
     </view>

@@ -1,12 +1,28 @@
-<!--miniprogram/pages/dangan/dangan.wxml-->
+<!-- miniprogram/pages/dangan/dangan.wxml -->
 <view class="dang_an">
-
-
-
-
-
-
-
-
-
+    <view class="tou">
+        <view class="tou_tu">
+            <view class="tou_png"></view>
+            <image class="lei_pic" src="../../img/mao.png" />
+        </view>
+        <view class="con_zhu">
+            <view class="con_name">
+                <view class="name">超级大黄</view>
+                <image class="sex" src="../../img/xiong.png" />
+                <view class="age">10岁 11个月</view>
+                <view class="kg">23Kg</view>
+            </view>
+            <view class="con_fu">
+                <view class="color">黄白色</view>
+                <view class="sort">阿拉斯加雪橇犬</view>
+                <view class="jueyu">已绝育</view>
+            </view>
+        </view>
+    </view>
+    <view class="tian">
+        <view class="tianjia" bindtap="to_jia">
+            <image class="jia_tu" src="../../img/j3.png" />
+            <text space="nbsp">添 加</text>
+        </view>
+    </view>
 </view>

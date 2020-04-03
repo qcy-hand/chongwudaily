@@ -40,7 +40,7 @@
         "text": "主页"
       },
       {
-        "pagePath": "pages/tianjia/tianjia",
+        "pagePath": "pages/dangan/dangan",
         "iconPath": "./img/dangan1.png",
         "selectedIconPath": "./img/dangan2.png",
         "text": "档案"

@@ -7,7 +7,11 @@ Page({
   data: {
 
   },
-
+  to_jia: function () {
+    wx.navigateTo({
+      url: '../tianjia/tianjia'
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

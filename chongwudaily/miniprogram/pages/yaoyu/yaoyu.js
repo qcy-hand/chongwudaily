@@ -9,7 +9,6 @@ Page({
     checked: false,
     fileList: [],
     chong_columns: ['张三', '李四', '王老五'],
-    pai_columns: ['英特威',  '百斯特', '梅里亚', '妙三多', '辉瑞','富道', '维克'],
     zhu_popup:false,
     minHour: 10,
     maxHour: 20,
@@ -28,6 +27,7 @@ Page({
     fan_columns:['良好','不适'],
 
     xia_popup: false,
+    pin_value:''
   },
 
   openchong() {
@@ -50,29 +50,6 @@ Page({
   },
 
   chong_cancel() {
-    Toast('取消');
-  },
-
-  openpai() {
-    this.setData({
-      pai_popup: true
-    })
-  },
-  closepai() {
-    this.setData({
-      pai_popup: false
-    })
-  },
-  pai_confirm(event) {
-    const {
-      picker,
-      value,
-      index
-    } = event.detail;
-    Toast(`当前值：${value}, 当前索引：${index}`);
-  },
-
-  pai_cancel() {
     Toast('取消');
   },
 

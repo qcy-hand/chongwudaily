@@ -51,13 +51,13 @@
         </van-popup>
     </view>
     <view class="pinzhong">
-        <van-field value="{{ pz_value }}" label="宠物品种" autosize placeholder="请输入" input-align="right" border="{{ false }}" />
+        <van-field value="{{ pz_value }}" label="宠物品种" autosize  input-align="right" border="{{ false }}" />
     </view>
     <view class="tizhong">
-        <van-field value="{{ tz_value }}" label="宠物体重" autosize placeholder="请输入" input-align="right" border="{{ false }}" />
+        <van-field value="{{ tz_value }}" label="宠物体重" autosize  input-align="right" border="{{ false }}" />
     </view>
     <view class="nicheng">
-        <van-field value="{{ mz_value }}" label="宠物名字" autosize placeholder="请输入" input-align="right" border="{{ false }}" />
+        <van-field value="{{ mz_value }}" label="宠物名字" autosize  input-align="right" border="{{ false }}" />
     </view>
     <view class="neirong">
         <view class="wancheng">完 成</view>

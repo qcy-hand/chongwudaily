@@ -1,6 +1,7 @@
 /* miniprogram/pages/meirong/meirong.wxss */
 .con_yimei {
     background-color: #ffffff;
+    color: #333;
 }
 
 .value-class {

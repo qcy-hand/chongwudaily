@@ -1,6 +1,7 @@
 /* miniprogram/pages/yimiao/yimiao.wxss */
 .con_yimiao {
     background-color: #ffffff;
+    color: #333;
 }
 .value-class {
     flex: none !important;
