@@ -1,6 +1,6 @@
 <!-- miniprogram/pages/dangan/dangan.wxml -->
 <view class="dang_an">
-    <view class="tou">
+    <view class="tou" bindtap="to_bianji">
         <view class="tou_tu">
             <view class="tou_png"></view>
             <image class="lei_pic" src="../../img/mao.png" />
@@ -20,9 +20,8 @@
         </view>
     </view>
     <view class="tian">
-        <view class="tianjia" bindtap="to_jia">
-            <image class="jia_tu" src="../../img/j3.png" />
-            <text space="nbsp">添 加</text>
-        </view>
+        <van-button bind:click="to_jia" round color="linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0))" custom-style=" width: 670rpx;height: 80rpx;" icon="plus">
+            添 加
+        </van-button>
     </view>
 </view>

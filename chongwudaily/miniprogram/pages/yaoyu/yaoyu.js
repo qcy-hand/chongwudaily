@@ -24,7 +24,7 @@ Page({
     },
 
     fan_popup:false,
-    fan_columns:['良好','不适'],
+    fan_columns:['良好','一般','不适'],
 
     xia_popup: false,
     pin_value:''

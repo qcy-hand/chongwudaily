@@ -7,11 +7,21 @@ Page({
   data: {
 
   },
+
+  //档案页点击档案进入编辑页面
+  to_bianji:function(){
+    wx.navigateTo({
+      url: '../bianji_dang/bianji_dang'
+    });
+  },
+  
+  //添加宠物档案
   to_jia: function () {
     wx.navigateTo({
       url: '../tianjia/tianjia'
     });
   },
+
   /**
    * 生命周期函数--监听页面加载
    */

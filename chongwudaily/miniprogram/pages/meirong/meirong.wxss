@@ -19,23 +19,12 @@
 .ti{
     margin: 1.5vh 0 1.5vh 0;
 }
+/* 完成按钮 */
 .mei {
-    width: 100vw;
     height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    padding: 3vh 0 0 0;
-
-}
-.push_mei {
-    width: 670rpx;
-    height: 80rpx;
-    border-radius: 50px;
-    text-align: center;
-    line-height: 80rpx;
-    color: #ffffff;
-    background: linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0));
+    padding: 3vh 0 3vh 0;
 
 }

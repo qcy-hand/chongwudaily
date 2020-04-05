@@ -42,8 +42,8 @@
         </van-cell>
     </view>
     <view class="jian">
-        <view class="push_jian" bindtap="push_jian">
-            <text space="nbsp">完 成</text>
-        </view>
+        <van-button bind:click="push_jian" round color="linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0))" custom-style=" width: 670rpx;height: 80rpx;" >
+            完 成
+        </van-button>
     </view>
 </view>

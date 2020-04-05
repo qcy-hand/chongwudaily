@@ -89,6 +89,13 @@
 					"id": -1,
 					"name": "pages/yimiao/yimiao",
 					"pathName": "pages/yimiao/yimiao",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/bianji_dang/bianji_dang",
+					"pathName": "pages/bianji_dang/bianji_dang",
 					"scene": null
 				}
 			]

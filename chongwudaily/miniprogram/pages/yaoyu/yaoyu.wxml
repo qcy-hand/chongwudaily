@@ -38,9 +38,10 @@
             <van-switch checked="{{ checked }}" size="20px" bind:change="oChange" />
         </van-cell>
     </view>
+
     <view class="yao">
-        <view class="push_yao" bindtap="push_yao">
-            <text space="nbsp">完 成</text>
-        </view>
+        <van-button bind:click="push_yao" round color="linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0))" custom-style=" width: 670rpx;height: 80rpx;" >
+            完 成
+        </van-button>
     </view>
 </view>

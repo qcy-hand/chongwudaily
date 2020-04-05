@@ -1,4 +1,4 @@
-<!-- miniprogram/pages/tianjia/tianjia.wxml -->
+<!-- miniprogram/pages/bianji_dang/bianji_tian.wxml -->
 <view class="con_tian">
     <view class="neirong">
         <view class="dangan">
@@ -51,17 +51,24 @@
         </van-popup>
     </view>
     <view class="pinzhong">
-        <van-field value="{{ pz_value }}" label="宠物品种" autosize  input-align="right" border="{{ false }}" />
+        <van-field value="{{ pz_value }}" label="宠物品种" autosize input-align="right" border="{{ false }}" />
     </view>
     <view class="tizhong">
-        <van-field value="{{ tz_value }}" label="宠物体重" type="number" autosize  input-align="right" border="{{ false }}" />
+        <van-field value="{{ tz_value }}" label="宠物体重" type="number" autosize input-align="right" border="{{ false }}" />
     </view>
     <view class="nicheng">
-        <van-field value="{{ mz_value }}" label="宠物名字" autosize  input-align="right" border="{{ false }}" />
+        <van-field value="{{ mz_value }}" label="宠物名字" autosize input-align="right" border="{{ false }}" />
     </view>
-    <view class="wancheng">
-        <van-button bind:click="push" round color="linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0))" custom-style=" width: 666rpx;height: 77rpx;" >
-            完 成
-        </van-button>
+    <view class="guanli">
+        <view class="shanchu">
+            <van-button plain  round color="#ff8e38" custom-style="width:230rpx;height:80rpx;">
+                删 除
+            </van-button>
+        </view>
+        <view class="baocun">
+            <van-button round color="linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0))" custom-style="width:230rpx;height:80rpx;">
+                保 存
+            </van-button>
+        </view>
     </view>
 </view>

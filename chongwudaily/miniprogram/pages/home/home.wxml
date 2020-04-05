@@ -1,39 +1,44 @@
 <!-- miniprogram/pages/home/home.wxml -->
 <view class="background">
     <view class="function-pick">
-    <view style="height:3vh;"></view>
         <view class="pickone">
-            <view class="hezi" bindtap="toyimiao">
-                <image src="../../img/yimiao.png" class="yimiao_img"></image>
-                <li style="font-size:14px;">疫苗</li>
+            <view class="one_icon">
+                <view bindtap="toyimiao">
+                    <image src="../../img/yimiao.png" class="yimiao_img"></image>
+                </view>
+                <view bindtap="toquchong">
+                    <image src="../../img/quchong.png" class="quchong_img"></image>
+                </view>
+                <view bindtap="totijian">
+                    <image src="../../img/tijian.png" class="tijian_img"></image>
+                </view>
             </view>
-            <view class="hezi" bindtap="toquchong">
-               <image src="../../img/quchong.png" class="quchong_img"></image>
-                <li style="font-size:14px;">驱虫</li>
-            </view>
-            <view class="hezi" bindtap="totijian">
-               <image src="../../img/tijian.png" class="tijian_img"></image>
-                <li style="font-size:14px;">体检</li>
+            <view class="one_text">
+                <view style="font-size:14px;">疫 苗</view>
+                <view style="font-size:14px;">驱 虫</view>
+                <view style="font-size:14px;">体 检</view>
             </view>
         </view>
-         <view style="height:3vh;"></view>
         <view class="picktwo">
-            <view class="hezi" bindtap="toxizao">
-               <image src="../../img/xizao.png" class="xizao_img"></image>
-                <li style="font-size:14px;">洗澡</li>
+            <view class="two_icon">
+                <view bindtap="toyaoyu">
+                    <image src="../../img/yaoyu.png" class="yaoyu_img"></image>
+                </view>
+                <view bindtap="tomeirong">
+                    <image src="../../img/meirong.png" class="meirong_img"></image>
+                </view>
+                <view bindtap="toxizao">
+                    <image src="../../img/xizao.png" class="xizao_img"></image>
+                </view>
             </view>
-            <view class="hezi" bindtap="tomeirong">
-               <image src="../../img/meirong.png" class="meirong_img"></image>
-                <li style="font-size:14px;">美容</li>
-            </view>
-            <view class="hezi" bindtap="toyaoyu">
-               <image src="../../img/yaoyu.png" class="yaoyu_img"></image>
-                <li style="font-size:14px;">药浴</li>
+            <view class="two_text">
+                <view style="font-size:14px;">药 浴</view>
+                <view style="font-size:14px;">美 容</view>
+                <view style="font-size:14px;">洗 澡</view>
             </view>
         </view>
-        
     </view>
-    <view style="height:5vh;"></view>
+    <view style="height:6vh;"></view>
     <view class="fenge"></view>
     <view class="pedia">
         <view class="mao">

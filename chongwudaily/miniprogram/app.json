@@ -8,7 +8,9 @@
     "van-picker": "@vant/weapp/picker/index",
     "van-datetime-picker": "@vant/weapp/datetime-picker/index",
     "van-index-bar": "@vant/weapp/index-bar/index",
-    "van-index-anchor": "@vant/weapp/index-anchor/index"
+    "van-index-anchor": "@vant/weapp/index-anchor/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index"
   },
   "pages": [
     "pages/home/home",
@@ -19,7 +21,8 @@
     "pages/xizao/xizao",
     "pages/meirong/meirong",
     "pages/yaoyu/yaoyu",
-    "pages/dangan/dangan"
+    "pages/dangan/dangan",
+    "pages/bianji_dang/bianji_dang"
   ],
   "window": {
     "backgroundColor": "#ffffff",
@@ -30,7 +33,8 @@
   },
   "tabBar": {
     "borderStyle": "white",
-    "selectedColor": "#5483a0",
+    "color": "#505050",
+    "selectedColor": "#FF8E38",
     "backgroundColor": "#ffffff",
     "list": [
       {

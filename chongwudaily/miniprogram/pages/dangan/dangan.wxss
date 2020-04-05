@@ -2,11 +2,10 @@
 .dang_an{
     width: 100vw;
     background-color: #ffffff;
-    color: #333;
+    color: #505050;
 }
 .tou{
     height: 200rpx;
-    border: solid 1rpx #707070;
     display: flex;
     align-items: center;
     margin: 0 0 1.5vh 0;
@@ -48,7 +47,7 @@
     margin: 0 7rpx 0 0;
     font-size: 14px;
     font-weight: bolder;
-    color: #333333;
+    color: #505050;
 }
 .sex{
     width: 35rpx;
@@ -76,31 +75,8 @@
 
 }
 .tian {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding: 3vh 0 0 0;
-
-}
-.tianjia {
-    width: 670rpx;
-    height: 80rpx;
-    line-height: 80rpx;
-    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-
-    font-size: 15px;
-    font-weight: bolder;
-    color: #ffffff;
-    
-    background: linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0));
-
-}
-.jia_tu{
-    width: 35rpx;
-    height: 35rpx;
-    margin: 3rpx 17rpx 0 0;
+    padding: 3vh 0 3vh 0;
 }

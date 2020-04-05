@@ -9,7 +9,7 @@ Page({
     checked: false,
     fileList: [],
     chong_columns: ['张三', '李四', '王老五'],
-    pai_columns: ['常规',  '血液', '粪便', 'X光', '超声'],
+    pai_columns: ['常规',  '血液', '粪便', 'X光', '超声','尿液'],
     zhu_popup:false,
     minHour: 10,
     maxHour: 20,
@@ -25,7 +25,7 @@ Page({
     },
 
     fan_popup:false,
-    fan_columns:['良好','不适'],
+    fan_columns:['良好','一般','不适'],
 
     xia_popup: false,
   },
