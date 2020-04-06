@@ -31,7 +31,7 @@
         <van-datetime-picker show-toolbar type="date" value="{{ currentDate }}" min-date="{{ minDate }}" formatter="{{ formatter }}" bind:input="xiaInput" bind:cancel="xia_cancel" bind:confirm="xia_confirm" />
     </van-popup>
     <view class="ti_jian">
-        <van-cell label="可选项" title="体检照片" border="{{ false }}" />
+        <van-cell label="选填" title="体检照片" border="{{ false }}" />
     </view>
     <view style="padding:0 0 0 4vw">
         <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />

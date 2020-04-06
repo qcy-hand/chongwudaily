@@ -29,7 +29,7 @@
         <van-field value="{{ pin_value }}" label="用药品名" autosize border="{{ false }}" />
     </view>
     <view class="tian">
-        <van-cell label="可选项" title="添加照片" border="{{ false }}" />
+        <van-cell label="选填" title="添加照片" border="{{ false }}" />
     </view>
     <view style="padding:0 0 0 4vw">
         <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />

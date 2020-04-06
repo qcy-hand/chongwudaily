@@ -14,9 +14,9 @@
                 </view>
             </view>
             <view class="one_text">
-                <view style="font-size:14px;">疫 苗</view>
-                <view style="font-size:14px;">驱 虫</view>
-                <view style="font-size:14px;">体 检</view>
+                <view style="font-size:14px;" bindtap="toyimiao">疫 苗</view>
+                <view style="font-size:14px;" bindtap="toquchong">驱 虫</view>
+                <view style="font-size:14px;" bindtap="totijian">体 检</view>
             </view>
         </view>
         <view class="picktwo">
@@ -32,9 +32,9 @@
                 </view>
             </view>
             <view class="two_text">
-                <view style="font-size:14px;">药 浴</view>
-                <view style="font-size:14px;">美 容</view>
-                <view style="font-size:14px;">洗 澡</view>
+                <view style="font-size:14px;" bindtap="toyaoyu">药 浴</view>
+                <view style="font-size:14px;" bindtap="tomeirong">美 容</view>
+                <view style="font-size:14px;" bindtap="toxizao">洗 澡</view>
             </view>
         </view>
     </view>

@@ -10,11 +10,18 @@
 .xuan{
     margin: 3vh 0 3vh 0;
 }
-.xi{
+.rong{
     margin: 1.5vh 0 3vh 0;
+}
+.hou{
+    margin: 1vh 0 2vh 0;
 }
 .xia{
     margin: 1.5vh 0 3vh 0;
+}
+
+.tian{
+    margin: 1vh 0 1vh 0;
 }
 .ti{
     margin: 1.5vh 0 1.5vh 0;

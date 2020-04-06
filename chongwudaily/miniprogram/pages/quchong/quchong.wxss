@@ -11,9 +11,6 @@
 .xuan{
     margin: 2vh 0 2vh 0;
 }
-.mu{
-    margin: 1vh 0 2vh 0;
-}
 .shi{
     margin: 1vh 0 2vh 0;
 }
@@ -23,8 +20,10 @@
 .xia{
     margin: 1vh 0 2vh 0;
 }
-
-.ti_jian{
+.yong{
+    margin: 1vh 0 2vh 0;
+}
+.tian{
     margin: 1vh 0 1vh 0;
 }
 .ti{

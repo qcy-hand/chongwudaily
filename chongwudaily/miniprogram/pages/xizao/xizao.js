@@ -22,6 +22,8 @@ Page({
       return value;
     },
 
+    fan_popup:false,
+    fan_columns:['良好','一般','不适'],
 
     xia_popup: false,
   },
@@ -76,7 +78,28 @@ Page({
       currentDate: event.detail
     });
   },
+  openfan() {
+    this.setData({
+      fan_popup: true
+    })
+  },
+  closefan() {
+    this.setData({
+      fan_popup: false
+    })
+  },
+  fan_confirm(event) {
+    const {
+      picker,
+      value,
+      index
+    } = event.detail;
+    Toast(`当前值：${value}, 当前索引：${index}`);
+  },
 
+  fan_cancel() {
+    Toast('取消');
+  },
   openxia() {
     this.setData({
       xia_popup: true
@@ -111,6 +134,34 @@ Page({
     });
   },
 
+
+  afterRead(event) {
+    const {
+      file
+    } = event.detail;
+    // 当设置 mutiple 为 true 时, file 为数组格式，否则为对象格式
+    wx.uploadFile({
+      url: 'https://example.weixin.qq.com/upload', // 仅为示例，非真实的接口地址
+      filePath: file.path,
+      name: 'file',
+      formData: {
+        user: 'test'
+      },
+      success(res) {
+        // 上传完成需要更新 fileList
+        const {
+          fileList = []
+        } = this.data;
+        fileList.push({
+          ...file,
+          url: res.data
+        });
+        this.setData({
+          fileList
+        });
+      }
+    });
+  },
 
  
 

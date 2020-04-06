@@ -12,12 +12,24 @@
     <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ zhu_popup }}" position="bottom" bind:close="closezhu">
         <van-datetime-picker show-toolbar type="date" value="{{ currentDate }}" min-date="{{ minDate }}" formatter="{{ formatter }}" bind:input="zhuInput" bind:cancel="zhu_cancel" bind:confirm="zhu_confirm" />
     </van-popup>
+    <view class="hou">
+        <van-cell title="后期反应" value="" clickable center bind:click="openfan" border="{{ false }}" />
+    </view>
+    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ fan_popup }}" position="bottom" bind:close="closefan">
+        <van-picker show-toolbar columns="{{ fan_columns }}" bind:cancel="fan_cancel" bind:confirm="fan_confirm" />
+    </van-popup>
     <view class="xia">
         <van-cell title="下次时间" value="" clickable center bind:click="openxia" border="{{ false }}" />
     </view>
     <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xia_popup }}" position="bottom" bind:close="closexia">
         <van-datetime-picker show-toolbar type="date" value="{{ currentDate }}" min-date="{{ minDate }}" formatter="{{ formatter }}" bind:input="xiaInput" bind:cancel="xia_cancel" bind:confirm="xia_confirm" />
     </van-popup>
+     <view class="tian">
+        <van-cell label="选填" title="添加照片" border="{{ false }}" />
+    </view>
+    <view style="padding:0 0 0 4vw">
+        <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+    </view>
     <view class="ti">
         <van-cell label="建议开启" title="智能提醒" value="" center border="{{ false }}">
             <van-switch checked="{{ checked }}" size="20px" bind:change="oChange" />

@@ -1,0 +1,15 @@
+<!-- miniprogram/pages/yimiao_note/yimiao_note.wxml -->
+<van-panel>
+    <view class="cw_info" slot="header">
+        <image class="userinfo-avatar" ></image>
+        <view class="headinfo">
+            <text class="userinfo-nickname">超级大黄</text>
+            <view class="nowtime">2020-03-21 16:35</view>
+        </view>
+    </view>
+    <view class="push">
+        <view class="item">时间：</view>
+        <view class="item">地点：</view>
+        <view class="item">项目：</view>
+    </view>
+</van-panel>

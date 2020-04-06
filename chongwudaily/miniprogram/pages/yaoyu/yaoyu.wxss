@@ -7,28 +7,35 @@
 .value-class {
     flex: none !important;
 }
-.xuan{
+
+.xuan {
     margin: 2vh 0 2vh 0;
 }
-.yong{
-    margin: 1vh 0 2vh 0;
-}
-.shi{
-    margin: 1vh 0 2vh 0;
-}
-.hou{
-    margin: 1vh 0 2vh 0;
-}
-.xia{
+
+.shi {
     margin: 1vh 0 2vh 0;
 }
 
-.bing{
+.hou {
+    margin: 1vh 0 2vh 0;
+}
+
+.xia {
+    margin: 1vh 0 2vh 0;
+}
+
+.yong {
+    margin: 1vh 0 2vh 0;
+}
+
+.bing {
     margin: 1vh 0 1vh 0;
 }
-.ti{
+
+.ti {
     margin: 1vh 0 1vh 0;
 }
+
 /* 完成按钮 */
 .yao {
     height: 7vh;
