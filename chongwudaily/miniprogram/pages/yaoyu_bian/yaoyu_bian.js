@@ -1,35 +1,28 @@
-// miniprogram/pages/yaoyu_note/yaoyu_note.js
+// miniprogram/pages/yaoyu_bian/yaoyu_bian.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    time: 30 * 60 * 60 * 1000, //倒计时
-    timeData: {},
-    
-    fileList: [
-      { url: 'https://img.yzcdn.cn/vant/leaf.jpg', name: '图片1' },
-      // Uploader 根据文件后缀来判断是否为图片文件
-      // 如果图片 URL 中不包含类型信息，可以添加 isImage 标记来声明
-      {
-        url: 'http://iph.href.lu/60x60?text=default',
-        name: '图片2',
-        isImage: true
-      },
-    ]
-  },
-  onChange(e) {
-    this.setData({
-      timeData: e.detail
-    });
+    xuan_popup: false,
+    checked: false,
+    fileList: [],
+    chong_columns: ['张三', '李四', '王老五'],
+    zhu_popup:false,
+    minHour: 10,
+    maxHour: 20,
+    minDate: new Date().getTime(),
+    maxDate: new Date(2030, 10, 1).getTime(),
+    currentDate: new Date().getTime(),
+   
+    fan_popup:false,
+    fan_columns:['良好','一般','不适'],
+
+    xia_popup: false,
+    pin_value:''
   },
 
-  to_bianji:function(){
-    wx.navigateTo({
-      url: '../yaoyu_bian/yaoyu_bian'
-    });
-  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,0 +1,48 @@
+/* miniprogram/pages/meirong_bian/meirong_bian.wxss */
+.con_yimei {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.value-class {
+    flex: none !important;
+}
+.xuan{
+    margin: 3vh 0 3vh 0;
+}
+.rong{
+    margin: 1.5vh 0 3vh 0;
+}
+.hou{
+    margin: 1vh 0 2vh 0;
+}
+.xia{
+    margin: 1.5vh 0 3vh 0;
+}
+
+.tian{
+    margin: 1vh 0 1vh 0;
+}
+.ti{
+    margin: 1.5vh 0 1.5vh 0;
+}
+
+
+.guanli {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 16px 3vh 16px;
+}
+.shanchu{
+    width: 375rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.baocun{
+    width: 375rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

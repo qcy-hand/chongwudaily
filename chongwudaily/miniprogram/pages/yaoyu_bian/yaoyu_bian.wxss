@@ -1,0 +1,56 @@
+/* miniprogram/pages/yaoyu_bian/yaoyu_bian.wxss */
+.con_yiyao {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.value-class {
+    flex: none !important;
+}
+
+.xuan {
+    margin: 2vh 0 2vh 0;
+}
+
+.shi {
+    margin: 1vh 0 2vh 0;
+}
+
+.hou {
+    margin: 1vh 0 2vh 0;
+}
+
+.xia {
+    margin: 1vh 0 2vh 0;
+}
+
+.yong {
+    margin: 1vh 0 2vh 0;
+}
+
+.bing {
+    margin: 1vh 0 1vh 0;
+}
+
+.ti {
+    margin: 1vh 0 1vh 0;
+}
+
+.guanli {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 16px 3vh 16px;
+}
+.shanchu{
+    width: 375rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.baocun{
+    width: 375rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

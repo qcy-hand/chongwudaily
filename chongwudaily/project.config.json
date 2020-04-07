@@ -80,16 +80,21 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/yimiao_note/yimiao_note",
-					"pathName": "pages/yimiao_note/yimiao_note",
+					"name": "pages/dang_tian/dang_tian",
+					"pathName": "pages/dang_tian/dang_tian",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/dang_tian/dang_tian",
-					"pathName": "pages/dang_tian/dang_tian",
-					"query": "",
+					"name": "pages/tijian_note/tijian_note",
+					"pathName": "pages/tijian_note/tijian_note",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "pages/meirong_note/meirong_note",
+					"pathName": "pages/meirong_note/meirong_note",
 					"scene": null
 				}
 			]

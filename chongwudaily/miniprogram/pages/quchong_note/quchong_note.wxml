@@ -1,4 +1,4 @@
-<!-- miniprogram/pages/yimiao_note/yimiao_note.wxml -->
+<!--miniprogram/pages/quchong_note/quchong_bian.wxml-->
 <view class="note">
     <view class="cw_info" slot="header" bindtap="to_bianji">
         <image class="cw-avatar"></image>
@@ -26,7 +26,7 @@
         <!-- <view class="item_right0">2020-03-21 16:35</view> -->
     </view>
     <view class="pic_miao">
-    <van-uploader file-list="{{ fileList }}" preview-size="80px"  disabled max-count="3" deletable="{{false}}"/>
+        <van-uploader file-list="{{ fileList }}" preview-size="80px" disabled max-count="3" deletable="{{false}}" />
         <!-- <view class="pic"></view>
         <view class="pic"></view>
         <view class="pic"></view> -->

@@ -28,7 +28,7 @@ Page({
 
   to_bianji:function(){
     wx.navigateTo({
-      url: '../bianji_dang/bianji_dang'
+      url: '../yimiao_bian/yimiao_bian'
     });
   },
   /**

@@ -1,4 +1,4 @@
-/* miniprogram/pages/yaoyu_note/yaoyu_note.wxss */
+/* miniprogram/pages/tijian_note/tijian_note.wxss */
 .note {
     padding: 35rpx 0 0 0;
 }

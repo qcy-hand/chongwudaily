@@ -1,4 +1,4 @@
-// miniprogram/pages/yaoyu_note/yaoyu_note.js
+// miniprogram/pages/xizao_note/xizao_note.js
 Page({
 
   /**
@@ -27,7 +27,7 @@ Page({
 
   to_bianji:function(){
     wx.navigateTo({
-      url: '../yaoyu_bian/yaoyu_bian'
+      url: '../xizao_bian/xizao_bian'
     });
   },
   /**

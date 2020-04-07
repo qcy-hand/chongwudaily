@@ -1,4 +1,4 @@
-// miniprogram/pages/yaoyu_note/yaoyu_note.js
+// miniprogram/pages/meirong_note/meirong_note.js
 Page({
 
   /**
@@ -27,9 +27,10 @@ Page({
 
   to_bianji:function(){
     wx.navigateTo({
-      url: '../yaoyu_bian/yaoyu_bian'
+      url: '../meirong_bian/meirong_bian'
     });
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
