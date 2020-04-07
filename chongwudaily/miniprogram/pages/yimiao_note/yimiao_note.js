@@ -31,6 +31,13 @@ Page({
       url: '../yimiao_bian/yimiao_bian'
     });
   },
+
+  to_yimiao:function(){
+    wx.navigateTo({
+      url:'../yimiao/yimiao'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

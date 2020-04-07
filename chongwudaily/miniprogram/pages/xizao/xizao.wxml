@@ -36,7 +36,7 @@
         </van-cell>
     </view>
     <view class="zao">
-        <van-button bind:click="push_zao" round color="linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0))" custom-style=" width: 670rpx;height: 80rpx;" >
+        <van-button bind:click="push_zao" round color="linear-gradient(to right,rgba(255, 115, 90,0.85), rgba(255, 187, 0,0.85))" custom-style=" width: 670rpx;height: 80rpx;" >
             完 成
         </van-button>
     </view>

@@ -1,6 +1,6 @@
 /* miniprogram/pages/meirong_note/meirong_note.wxss */
 .note {
-    padding: 35rpx 0 0 0;
+    padding: 35rpx 0 20rpx 0;
 }
 
 .cw_info {
@@ -51,9 +51,6 @@
     flex-direction: column;
 }
 
-.pinpai {
-    margin: 2rpx 0 6rpx 0;
-}
 
 .fan {
     margin: 6rpx 0 0 0;
@@ -61,7 +58,7 @@
 
 .dao {
     display: flex;
-    margin: 0 10rpx 0 0;
+    margin: 0 20rpx 0 0;
 }
 
 .item {
@@ -75,12 +72,12 @@
     font-size: 13px;
     text-align: center;
     color: #fff;
-    background-color: #ff8e38;
+    background-color: rgba(255, 142, 56, 0.85);
 }
 
 .item_right0 {
     font-size: 14px;
-    padding: 0 20rpx 0 0;
+    padding: 0 30rpx 0 0;
 }
 
 .pic_miao {
@@ -95,4 +92,25 @@
     height: 90px;
     border-radius: 5px;
     background-color: #505050;
+}
+
+.add{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color:rgba(255, 142, 56, 0.8);
+    font-size: 12px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 50rpx;
+    bottom: 130rpx;
+}
+.pic_add{
+    width: 35rpx;
+    height: 35rpx;
 }

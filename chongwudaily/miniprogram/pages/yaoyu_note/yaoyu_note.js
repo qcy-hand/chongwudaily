@@ -30,6 +30,13 @@ Page({
       url: '../yaoyu_bian/yaoyu_bian'
     });
   },
+
+  to_yaoyu:function(){
+    wx.navigateTo({
+      url:'../yaoyu/yaoyu'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

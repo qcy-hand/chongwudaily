@@ -3,38 +3,38 @@
     <view class="function-pick">
         <view class="pickone">
             <view class="one_icon">
-                <view bindtap="toyimiao">
+                <view bindtap="toyimiao_note">
                     <image src="../../img/yimiao.png" class="yimiao_img"></image>
                 </view>
-                <view bindtap="toquchong">
+                <view bindtap="toquchong_note">
                     <image src="../../img/quchong.png" class="quchong_img"></image>
                 </view>
-                <view bindtap="totijian">
+                <view bindtap="totijian_note">
                     <image src="../../img/tijian.png" class="tijian_img"></image>
                 </view>
             </view>
             <view class="one_text">
-                <view style="font-size:14px;" bindtap="toyimiao">疫 苗</view>
-                <view style="font-size:14px;" bindtap="toquchong">驱 虫</view>
-                <view style="font-size:14px;" bindtap="totijian">体 检</view>
+                <view style="font-size:14px;" bindtap="toyimiao_note">疫 苗</view>
+                <view style="font-size:14px;" bindtap="toquchong_note">驱 虫</view>
+                <view style="font-size:14px;" bindtap="totijian_note">体 检</view>
             </view>
         </view>
         <view class="picktwo">
             <view class="two_icon">
-                <view bindtap="toyaoyu">
+                <view bindtap="toyaoyu_note">
                     <image src="../../img/yaoyu.png" class="yaoyu_img"></image>
                 </view>
-                <view bindtap="tomeirong">
+                <view bindtap="tomeirong_note">
                     <image src="../../img/meirong.png" class="meirong_img"></image>
                 </view>
-                <view bindtap="toxizao">
+                <view bindtap="toxizao_note">
                     <image src="../../img/xizao.png" class="xizao_img"></image>
                 </view>
             </view>
             <view class="two_text">
-                <view style="font-size:14px;" bindtap="toyaoyu">药 浴</view>
-                <view style="font-size:14px;" bindtap="tomeirong">美 容</view>
-                <view style="font-size:14px;" bindtap="toxizao">洗 澡</view>
+                <view style="font-size:14px;" bindtap="toyaoyu_note">药 浴</view>
+                <view style="font-size:14px;" bindtap="tomeirong_note">美 容</view>
+                <view style="font-size:14px;" bindtap="toxizao_note">洗 澡</view>
             </view>
         </view>
     </view>

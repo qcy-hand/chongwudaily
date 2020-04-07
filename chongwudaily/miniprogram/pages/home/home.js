@@ -10,34 +10,34 @@ Page({
   data: {
 
   },
-  toyimiao: function () {
+  toyimiao_note: function () {
     wx.navigateTo({
-      url: '../yimiao/yimiao'
+      url: '../yimiao_note/yimiao_note'
     });
   },
-  toquchong: function () {
+  toquchong_note: function () {
     wx.navigateTo({
-      url: '../quchong/quchong'
+      url: '../quchong_note/quchong_note'
     });
   },
-  totijian: function () {
+  totijian_note: function () {
     wx.navigateTo({
-      url: '../tijian/tijian'
+      url: '../tijian_note/tijian_note'
     });
   },
-  toxizao: function () {
+  toxizao_note: function () {
     wx.navigateTo({
-      url: '../xizao/xizao'
+      url: '../xizao_note/xizao_note'
     });
   },
-  tomeirong: function () {
+  tomeirong_note: function () {
     wx.navigateTo({
-      url: '../meirong/meirong'
+      url: '../meirong_note/meirong_note'
     });
   },
-  toyaoyu: function () {
+  toyaoyu_note: function () {
     wx.navigateTo({
-      url: '../yaoyu/yaoyu'
+      url: '../yaoyu_note/yaoyu_note'
     });
   },
 

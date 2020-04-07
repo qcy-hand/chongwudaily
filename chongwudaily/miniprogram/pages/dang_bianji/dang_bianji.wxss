@@ -97,7 +97,8 @@
 .wangzi_c {
     width: 145rpx;
     height: 60rpx;
-    background-color: #ff8e38;
+    color: #ffffff;
+    background-color: rgba(255, 142, 56, 0.65);
     font-size: 14px;
     border-radius: 25px;
     display: flex;
@@ -121,7 +122,8 @@
 .gongzhu_c {
     width: 145rpx;
     height: 60rpx;
-    background-color: #ff8e38;
+    color: #ffffff;
+    background-color: rgba(255, 142, 56, 0.65);
     font-size: 14px;
     border-radius: 25px;
     display: flex;
@@ -160,7 +162,8 @@
 .yijue_c {
     width: 145rpx;
     height: 60rpx;
-    background-color: #ff8e38;
+    color: #ffffff;
+    background-color: rgba(255, 142, 56, 0.65);
     font-size: 14px;
     border-radius: 25px;
     display: flex;
@@ -185,7 +188,8 @@
 .weijue_c {
     width: 145rpx;
     height: 60rpx;
-    background-color: #ff8e38;
+    color: #ffffff;
+    background-color: rgba(255, 142, 56, 0.65);
     font-size: 14px;
     border-radius: 25px;
     display: flex;

@@ -9,7 +9,6 @@
     </view>
     <view class="push" bindtap="to_bianji">
         <view class="item_left">
-            <view class="pinpai">国产百斯特</view>
             <view class="fan">反应良好</view>
         </view>
         <view class="item_right1">
@@ -26,9 +25,13 @@
         <!-- <view class="item_right0">2020-03-21 16:35</view> -->
     </view>
     <view class="pic_miao">
-        <van-uploader file-list="{{ fileList }}" preview-size="80px" disabled max-count="3" deletable="{{false}}" />
+        <van-uploader file-list="{{ fileList }}" preview-size="193rpx" disabled max-count="3" deletable="{{false}}" />
         <!-- <view class="pic"></view>
         <view class="pic"></view>
         <view class="pic"></view> -->
     </view>
+</view>
+<view class="add" bindtap="to_meirong">
+    <image src="../../img/j2.png" class="pic_add" />
+    <text >添加</text>
 </view>

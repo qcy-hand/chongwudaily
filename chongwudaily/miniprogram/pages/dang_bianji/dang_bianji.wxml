@@ -61,12 +61,12 @@
     </view>
     <view class="guanli">
         <view class="shanchu">
-            <van-button plain  round color="#ff8e38" custom-style="width:230rpx;height:80rpx;">
+            <van-button plain round color="#ff8e38" custom-style="width:230rpx;height:80rpx;">
                 删 除
             </van-button>
         </view>
         <view class="baocun">
-            <van-button round color="linear-gradient(to right,rgb(255, 115, 90), rgb(255, 187, 0))" custom-style="width:230rpx;height:80rpx;">
+            <van-button round color="linear-gradient(to bottom right,rgba(255, 115, 90,0.85), rgba(255, 187, 0,0.85))" custom-style="width:230rpx;height:80rpx;">
                 保 存
             </van-button>
         </view>

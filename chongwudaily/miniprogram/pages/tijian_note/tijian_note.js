@@ -30,6 +30,13 @@ Page({
       url: '../tijian_bian/tijian_bian'
     });
   },
+
+  to_tijian:function(){
+    wx.navigateTo({
+      url:'../tijian/tijian'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

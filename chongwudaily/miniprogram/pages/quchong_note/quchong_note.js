@@ -30,6 +30,13 @@ Page({
       url: '../quchong_bian/quchong_bian'
     });
   },
+
+  to_quchong:function(){
+    wx.navigateTo({
+      url:'../quchong/quchong'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

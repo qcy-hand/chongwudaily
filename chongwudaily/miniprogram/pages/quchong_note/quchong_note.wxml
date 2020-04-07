@@ -9,7 +9,7 @@
     </view>
     <view class="push" bindtap="to_bianji">
         <view class="item_left">
-            <view class="pinpai">国产百斯特</view>
+            <view class="pinming">国产百斯特</view>
             <view class="fan">反应良好</view>
         </view>
         <view class="item_right1">
@@ -31,4 +31,9 @@
         <view class="pic"></view>
         <view class="pic"></view> -->
     </view>
+</view>
+
+<view class="add" bindtap="to_quchong">
+    <image src="../../img/j2.png" class="pic_add" />
+    <text >添加</text>
 </view>
