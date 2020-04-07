@@ -11,11 +11,11 @@
     "van-index-anchor": "@vant/weapp/index-anchor/index",
     "van-button": "@vant/weapp/button/index",
     "van-icon": "@vant/weapp/icon/index",
-    "van-panel": "@vant/weapp/panel/index"
+    "van-count-down": "@vant/weapp/count-down/index"
   },
   "pages": [
     "pages/home/home",
-    "pages/tianjia/tianjia",
+    "pages/dang_tian/dang_tian",
     "pages/yimiao/yimiao",
     "pages/quchong/quchong",
     "pages/tijian/tijian",
@@ -23,8 +23,9 @@
     "pages/meirong/meirong",
     "pages/yaoyu/yaoyu",
     "pages/dangan/dangan",
-    "pages/bianji_dang/bianji_dang",
-    "pages/yimiao_note/yimiao_note"
+    "pages/dang_bianji/dang_bianji",
+    "pages/yimiao_note/yimiao_note",
+    "pages/yaoyu_note/yaoyu_note"
   ],
   "window": {
     "backgroundColor": "#ffffff",

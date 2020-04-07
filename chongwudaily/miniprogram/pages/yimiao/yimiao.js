@@ -16,15 +16,9 @@ Page({
     minHour: 10,
     maxHour: 20,
     minDate: new Date().getTime(),
+    maxDate: new Date(2030, 10, 1).getTime(),
     currentDate: new Date().getTime(),
-    formatter(type, value) {
-      if (type === 'year') {
-        return `${value}年`;
-      } else if (type === 'month') {
-        return `${value}月`;
-      }
-      return value;
-    },
+   
     fan_popup:false,
     fan_columns:['良好','一般','不适'],
     xia_popup: false,

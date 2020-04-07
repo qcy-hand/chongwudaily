@@ -10,7 +10,7 @@
         <van-cell title="注射时间" value="" clickable center bind:click="openzhu" border="{{ false }}" />
     </view>
     <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ zhu_popup }}" position="bottom" bind:close="closezhu">
-        <van-datetime-picker show-toolbar type="date" value="{{ currentDate }}" min-date="{{ minDate }}" formatter="{{ formatter }}" bind:input="zhuInput" bind:cancel="zhu_cancel" bind:confirm="zhu_confirm" />
+        <van-datetime-picker show-toolbar type="date" value="{{ currentDate }}" min-date="{{ minDate }}"  bind:input="zhuInput" bind:cancel="zhu_cancel" bind:confirm="zhu_confirm" />
     </van-popup>
     <view class="hou">
         <van-cell title="注后反应" value="" clickable center bind:click="openfan" border="{{ false }}" />
@@ -22,7 +22,7 @@
         <van-cell title="下次时间" value="" clickable center bind:click="openxia" border="{{ false }}" />
     </view>
     <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xia_popup }}" position="bottom" bind:close="closexia">
-        <van-datetime-picker show-toolbar type="date" value="{{ currentDate }}" min-date="{{ minDate }}" formatter="{{ formatter }}" bind:input="xiaInput" bind:cancel="xia_cancel" bind:confirm="xia_confirm" />
+        <van-datetime-picker show-toolbar type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:input="xiaInput" bind:cancel="xia_cancel" bind:confirm="xia_confirm" />
     </van-popup>
     <view class="pin">
         <van-field value="{{ pai_value }}" label="疫苗品牌" autosize border="{{ false }}" />

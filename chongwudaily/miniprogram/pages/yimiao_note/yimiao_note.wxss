@@ -1,12 +1,14 @@
 /* miniprogram/pages/yimiao_note/yimiao_note.wxss */
+.note {
+    padding: 35rpx 0 0 0;
+}
+
 .cw_info {
     display: flex;
     align-items: center;
-    height: 115rpx;
-    padding-top: 90rpx;
 }
 
-.userinfo-avatar {
+.cw-avatar {
     width: 75rpx;
     height: 75rpx;
     margin: 0 0 0 20rpx;
@@ -15,36 +17,82 @@
     background-color: #505050;
 }
 
-.headinfo {
-    height: 85rpx;
+.head {
+    height: 80rpx;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.userinfo-nickname {
+.cw-nickname {
     font-size: 14px;
     font-weight: bolder;
     padding: 0 0 0 20rpx;
     color: #333366;
 }
 
-.nowtime {
+.now_time {
     font-size: 12px;
     padding: 0 0 0 20rpx;
     color: #999;
 }
 
 .push {
-    width: 100vw;
+    width: 636;
+    padding: 7rpx 0 10rpx 114rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item_left {
+    font-size: 13px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: 14px;
-    padding: 7rpx 0 7rpx 0;
+}
+
+.pinpai {
+    margin: 2rpx 0 6rpx 0;
+}
+
+.fan {
+    margin: 6rpx 0 0 0;
+}
+
+.dao {
+    display: flex;
+    margin: 0 10rpx 0 0;
 }
 
 .item {
-    width: 600rpx;
-    padding: 7rpx 0 7rpx 114rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50rpx;
+    height: 50rpx;
+    margin: 0 10rpx 0 0;
+    border-radius: 5px;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    background-color: #ff8e38;
+}
+
+.item_right0 {
+    font-size: 14px;
+    padding: 0 20rpx 0 0;
+}
+
+.pic_miao {
+    padding: 10rpx 0 0 115rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: #505050;
 }

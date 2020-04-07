@@ -9,21 +9,14 @@ Page({
     checked: false,
     fileList: [],
     chong_columns: ['张三', '李四', '王老五'],
-    pai_columns: ['常规',  '血液', '粪便', 'X光', '超声','尿液'],
+    pai_columns: ['常规检查',  '血液检查', '粪便检查', 'X光检查', '超声检查','尿液检查'],
     zhu_popup:false,
     minHour: 10,
     maxHour: 20,
     minDate: new Date().getTime(),
+    maxDate: new Date(2030, 10, 1).getTime(),
     currentDate: new Date().getTime(),
-    formatter(type, value) {
-      if (type === 'year') {
-        return `${value}年`;
-      } else if (type === 'month') {
-        return `${value}月`;
-      }
-      return value;
-    },
-
+   
     fan_popup:false,
     fan_columns:['良好','一般','不适'],
 

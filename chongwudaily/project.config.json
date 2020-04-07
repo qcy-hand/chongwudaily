@@ -59,13 +59,6 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/tianjia/tianjia",
-					"pathName": "pages/tianjia/tianjia",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
 					"name": "pages/home/home",
 					"pathName": "pages/home/home",
 					"query": "",
@@ -80,13 +73,6 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/tianjia/tianjia",
-					"pathName": "pages/tianjia/tianjia",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
 					"name": "pages/yimiao/yimiao",
 					"pathName": "pages/yimiao/yimiao",
 					"query": "",
@@ -94,15 +80,16 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/bianji_dang/bianji_dang",
-					"pathName": "pages/bianji_dang/bianji_dang",
+					"name": "pages/yimiao_note/yimiao_note",
+					"pathName": "pages/yimiao_note/yimiao_note",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/yimiao_note/yimiao_note",
-					"pathName": "pages/yimiao_note/yimiao_note",
+					"name": "pages/dang_tian/dang_tian",
+					"pathName": "pages/dang_tian/dang_tian",
+					"query": "",
 					"scene": null
 				}
 			]
