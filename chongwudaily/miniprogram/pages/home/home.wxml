@@ -38,16 +38,27 @@
             </view>
         </view>
     </view>
-    <view style="height:6vh;"></view>
-    <view class="fenge"></view>
+    <!-- <view class="fenge"></view> -->
     <view class="pedia">
-        <view class="mao">
-            <view class="maoke"></view>
-            <view class="maoke"></view>
+        <view class="baodian">
+            <view class="bao_mao">
+                <image src="../../img/ym.png" class="ym_img"></image>
+                <text style="font-size:14px;color:#505050;">养猫宝典</text>
+            </view>
+            <view class="bao_gou">
+                <image src="../../img/yg.png" class="yg_img"></image>
+                <text style="font-size:14px;color:#505050;">养狗宝典</text>
+            </view>
         </view>
-        <view class="gou">
-            <view class="gouke"></view>
-            <view class="gouke"></view>
+        <view class="baike">
+            <view class="maoke">
+                <image src="../../img/mk1.png" class="mk_img"></image>
+                <text style="font-size:14px;color:#505050;">猫猫百科</text>
+            </view>
+            <view class="gouke">
+                <image src="../../img/gk1.png" class="gk_img"></image>
+                <text style="font-size:14px;color:#505050;">狗狗百科</text>
+            </view>
         </view>
     </view>
 </view>

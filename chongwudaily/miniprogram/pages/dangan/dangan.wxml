@@ -19,9 +19,13 @@
             </view>
         </view>
     </view>
-    <view class="tian">
+    <!-- <view class="tian">
         <van-button bind:click="to_jia" round color="linear-gradient(to right,rgba(255, 115, 90,0.85), rgba(255, 187, 0,0.85))" custom-style=" width: 670rpx;height: 80rpx;" icon="plus">
             添 加
         </van-button>
+    </view> -->
+    <view class="add" bindtap="to_jia">
+        <image src="../../img/j2.png" class="pic_add" />
+        <text>添加</text>
     </view>
 </view>

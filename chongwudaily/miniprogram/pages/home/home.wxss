@@ -9,6 +9,7 @@
 .function-pick {
     display: flex;
     flex-direction: column;
+    margin: 5rpx 0 15rpx 0;
 }
 
 .pickone {
@@ -16,11 +17,13 @@
     flex-direction: column;
     margin: 35rpx 0 30rpx 0;
 }
-.one_icon{
+
+.one_icon {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 .yimiao_img {
     width: 100rpx;
     height: 100rpx;
@@ -50,11 +53,13 @@
     flex-direction: column;
     margin: 25rpx 0 35rpx 0;
 }
-.two_icon{
+
+.two_icon {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 .xizao_img {
     width: 88rpx;
     height: 105rpx;
@@ -70,41 +75,91 @@
     width: 100rpx;
     height: 100rpx;
 }
-.two_text{
+
+.two_text {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+/* 
 .fenge {
     width: 100vw;
     height: 3vh;
     background-color: rgba(153, 153, 153, 0.3);
-}
+} */
 
-.pedia {
+
+.baodian {
+    width: 600rpx;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25rpx 0 25rpx 0 ;
 }
 
-.mao {
+.bao_mao {
+    width: 245rpx;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ym_img {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.bao_gou {
+    width: 245rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yg_img {
+    width: 85rpx;
+    height: 115rpx;
+    margin: 0 0 0 9rpx;
+}
+
+.pedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.baike {
+    width: 600rpx;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25rpx 0 25rpx 0 ;
 }
 
 .maoke {
-    width: 45vw;
-    height: 7vh;
-    margin: 2vh 2vw 2vh 2vw;
-    background-color: rgba(153, 153, 153, 0.3);
+    width: 245rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.gou {
-    display: flex;
+.mk_img {
+    width: 100rpx;
+    height: 100rpx;
+
 }
 
 .gouke {
-    width: 45vw;
-    height: 7vh;
-    margin: 2vh 2vw 2vh 2vw;
-    background-color: rgba(153, 153, 153, 0.3);
+    width: 245rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gk_img {
+    width: 100rpx;
+    height: 100rpx;
+
 }
