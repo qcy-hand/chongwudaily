@@ -27,6 +27,7 @@
 	"libVersion": "2.8.1",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -89,12 +90,14 @@
 					"id": -1,
 					"name": "pages/tijian_note/tijian_note",
 					"pathName": "pages/tijian_note/tijian_note",
+					"query": "",
 					"scene": null
 				},
 				{
 					"id": 6,
-					"name": "pages/meirong_note/meirong_note",
-					"pathName": "pages/meirong_note/meirong_note",
+					"name": "pages/yimiao_note/yimiao_note",
+					"pathName": "pages/yimiao_note/yimiao_note",
+					"query": "",
 					"scene": null
 				}
 			]
