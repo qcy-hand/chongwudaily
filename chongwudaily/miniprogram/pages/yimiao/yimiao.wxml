@@ -30,7 +30,7 @@
     </van-popup>
     <!-- 品牌 -->
     <view class="pin">
-        <van-field maxlength="15" value="{{ id_pai }}" clickable label="疫苗品牌" input-align="right" border="{{ false }}" bind:input="Input_pai" bind:blur="checking" />
+        <van-field maxlength="15" value="{{ id_pai }}" clickable label="疫苗品牌" input-align="right" border="{{ false }}" bind:input="Input_pai"  />
     </view>
     <!-- 标签 -->
     <view class="biao">
@@ -47,12 +47,12 @@
     </view>
     <!-- 提交 -->
     <!-- 禁用按钮 -->
-    <view class="miao_jin" wx:if="{{yimiao_jin}}">
-        <view class="yi_jin">完 成</view>
+    <view class="wancheng_jin" wx:if="{{wancheng_jin}}">
+        <view class="wan_jin">完 成</view>
     </view>
     <!-- 启用 -->
-    <view class="miao" wx:else="{{yimiao}}">
-        <van-button bind:click="push_miao" round color="linear-gradient(to right,rgba(255, 115, 90,0.85), rgba(255, 187, 0,0.85))" custom-style=" width: 670rpx;height: 80rpx;">
+    <view class="wancheng" wx:else="{{wancheng}}">
+        <van-button bind:click="push_wan" round color="linear-gradient(to right,rgba(255, 115, 90,0.85), rgba(255, 187, 0,0.85))" custom-style=" width: 670rpx;height: 80rpx;">
             完 成
         </van-button>
     </view>

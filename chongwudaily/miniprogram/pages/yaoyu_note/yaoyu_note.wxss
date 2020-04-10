@@ -90,12 +90,6 @@
     align-items: center;
 }
 
-.pic {
-    width: 90px;
-    height: 90px;
-    border-radius: 5px;
-    background-color: #505050;
-}
 
 .add{
     width: 100rpx;

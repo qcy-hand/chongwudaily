@@ -1,4 +1,4 @@
-/* miniprogram/pages/yimiao/yimiao.wxss */
+/* miniprogram/pages/yiwancheng/yimiao.wxss */
 .con_yimiao {
     background-color: #ffffff;
     color: #333;
@@ -37,7 +37,7 @@
 }
 
 /* 禁用完成按钮 */
-.miao_jin {
+.wancheng_jin {
     height: 7vh;
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@
     padding: 3vh 0 3vh 0;
 }
 
-.yi_jin {
+.wan_jin {
     width: 670rpx;
     height: 80rpx;
     font-size: 14px;
@@ -57,7 +57,7 @@
 }
 
 /* 完成按钮 */
-.miao {
+.wancheng {
     height: 7vh;
     display: flex;
     justify-content: center;

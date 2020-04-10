@@ -1,5 +1,4 @@
 // miniprogram/pages/yimiao/yimiao.js
-import Toast from '@vant/weapp/toast/toast';
 import Dialog from '@vant/weapp/dialog/dialog';
 
 Page({
@@ -44,8 +43,8 @@ Page({
     checked: false,
 
     //完成按钮禁用状态
-    yimiao_jin: true,
-    yimiao: false,
+    wancheng_jin: true,
+    wancheng: false,
 
     //Push
     Timestamp: "", //时间戳 用于排序
@@ -56,16 +55,16 @@ Page({
     let that = this;
     if (that.data.xuan_chong !== "" && that.data.zhu_time !== "" && that.data.fan_zhu !== "" && that.data.xia_time !== "" && that.data.id_pai !== "") {
       that.setData({
-        yimiao_jin: false,
-        yimiao: true
+        wancheng_jin: false,
+        wancheng: true
       }, () => {
         console.log('内容已填满')
       });
 
     } else {
       that.setData({
-        yimiao_jin: true,
-        yimiao: false
+        wancheng_jin: true,
+        wancheng: false
       }, () => {
         console.log('内容未填满')
       });
@@ -89,7 +88,7 @@ Page({
       xuan_popup: false,
       xuan_chong: event.detail.value,
     }, () => {
-      console.log(event.detail.value)
+      // console.log(event.detail.value)
       this.checking()
     });
   },
@@ -143,7 +142,6 @@ Page({
     })
   },
   fan_confirm(event) {
-
     this.setData({
       fan_popup: false,
       fan_zhu: '反应' + event.detail.value,
@@ -272,7 +270,7 @@ Page({
   },
 
   //完成——提交
-  push_miao() {
+  push_wan() {
     Dialog.confirm({
       message: '填好啦？',
       closeOnClickOverlay: true,

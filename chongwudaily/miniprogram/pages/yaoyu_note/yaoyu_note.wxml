@@ -1,16 +1,16 @@
 <!-- miniprogram/pages/yaoyu_note/yaoyu_note.wxml -->
-<view class="note">
+<view class="note" wx:for="{{arryaoyu}}" wx:key="id">
     <view class="cw_info" slot="header" bindtap="to_bianji">
         <image class="cw-avatar"></image>
         <view class="head">
-            <text class="cw-nickname">超级大黄</text>
-            <text class="now_time">2020-03-21 16:35</text>
+            <text class="cw-nickname">{{item.xuan_chong}}</text>
+            <text class="now_time">{{item.yao_time}}</text>
         </view>
     </view>
     <view class="push" bindtap="to_bianji">
         <view class="item_left">
-            <view class="pinpai">国产百斯特</view>
-            <view class="fan">反应良好</view>
+            <view class="pinpai">{{item.id_pai}}</view>
+            <view class="fan">{{item.fan_hou}}</view>
         </view>
         <view class="item_right1">
             <van-count-down use-slot time="{{ time }}" bind:change="onChange">
@@ -27,9 +27,6 @@
     </view>
     <view class="pic_miao">
         <van-uploader file-list="{{ fileList }}" preview-size="80px" disabled max-count="3" deletable="{{false}}" />
-        <!-- <view class="pic"></view>
-        <view class="pic"></view>
-        <view class="pic"></view> -->
     </view>
 </view>
 <view class="add" bindtap="to_yaoyu">

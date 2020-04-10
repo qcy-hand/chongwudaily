@@ -5,9 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    time: 30 * 60 * 60 * 1000, //倒计时
+    //倒计时
+    time: 30 * 60 * 60 * 1000, 
     timeData: {},
     
+    //预览图
     fileList: [
       { url: 'https://img.yzcdn.cn/vant/leaf.jpg', name: '图片1' },
       // Uploader 根据文件后缀来判断是否为图片文件
@@ -17,38 +19,76 @@ Page({
         name: '图片2',
         isImage: true
       },
-    ]
+    ],
+
+    //回调数组
+    arryaoyu: []
   },
+
+  //倒计时
   onChange(e) {
     this.setData({
       timeData: e.detail
     });
   },
 
+  //去编辑
   to_bianji:function(){
     wx.navigateTo({
       url: '../yaoyu_bian/yaoyu_bian'
     });
   },
 
+  //去添加页
   to_yaoyu:function(){
     wx.navigateTo({
       url:'../yaoyu/yaoyu'
     })
   },
 
+//取数据
+Getinfo() {
+  let that = this;
+  wx.cloud.callFunction({
+    name: "yaoyu_get",
+    success(res) {
+      that.setData({
+        arryaoyu: res.result.data,
+      }, () => {
+        wx.hideLoading();
+
+        console.log(res.result.data);
+
+      });
+    },
+    fail() {
+      wx.hideLoading();
+      wx.showToast({
+        title: '加载错误，请稍后重试!',
+        duration: 1000,
+        icon: "none"
+      })
+    }
+  })
+},
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that = this;
+    wx.showLoading({
+      title: "加载中...",
+    });
+    that.Getinfo();
+    console.log('取到数据');
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**

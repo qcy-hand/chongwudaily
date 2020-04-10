@@ -1,43 +1,56 @@
 <!-- miniprogram/pages/meirong/meirong.wxml -->
 <view class="con_yimei">
+    <!-- 宠物 -->
     <view class="xuan">
-        <van-cell title="选择宠物" value="" clickable center bind:click="openchong" border="{{ false }}" />
+        <van-cell title="选择宠物" value="{{xuan_chong}}" clickable center bind:click="openchong" border="{{ false }}" />
     </view>
     <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xuan_popup }}" position="bottom" bind:close="closechong">
-        <van-picker show-toolbar columns="{{ chong_columns }}" bind:cancel="chong_cancel" bind:confirm="chong_confirm" />
+        <van-picker show-toolbar columns="{{ chong_columns }}" bind:cancel="closechong" bind:confirm="chong_confirm" />
     </van-popup>
+    <!-- 美容 -->
     <view class="rong">
-        <van-cell title="美容时间" value="" clickable center bind:click="openzhu" border="{{ false }}" />
+        <van-cell title="美容时间" value="{{xi_time}}" clickable center bind:click="openxi" border="{{ false }}" />
     </view>
-    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ zhu_popup }}" position="bottom" bind:close="closezhu">
-        <van-datetime-picker show-toolbar type="date" value="{{ currentDate }}" min-date="{{ minDate }}"  bind:input="zhuInput" bind:cancel="zhu_cancel" bind:confirm="zhu_confirm" />
+    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xi_popup }}" position="bottom" bind:close="closexi">
+        <van-datetime-picker show-toolbar type="datetime" value="{{ xi_currentDate }}" min-date="{{ xi_minDate }}" xi-date="{{yao_maxDate}}" bind:cancel="closexi" bind:confirm="xi_confirm" />
     </van-popup>
+    <!-- 反应 -->
     <view class="hou">
-        <van-cell title="后期反应" value="" clickable center bind:click="openfan" border="{{ false }}" />
+        <van-cell title="后期反应" value="{{fan_hou}}" clickable center bind:click="openfan" border="{{ false }}" />
     </view>
     <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ fan_popup }}" position="bottom" bind:close="closefan">
-        <van-picker show-toolbar columns="{{ fan_columns }}" bind:cancel="fan_cancel" bind:confirm="fan_confirm" />
+        <van-picker show-toolbar columns="{{ fan_columns }}" bind:cancel="closefan" bind:confirm="fan_confirm" />
     </van-popup>
+     <!-- 下次 -->
     <view class="xia">
-        <van-cell title="下次时间" value="" clickable center bind:click="openxia" border="{{ false }}" />
+        <van-cell title="下次时间" value="{{xia_time}}" clickable center bind:click="openxia" border="{{ false }}" />
     </view>
     <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xia_popup }}" position="bottom" bind:close="closexia">
-        <van-datetime-picker show-toolbar type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:input="xiaInput" bind:cancel="xia_cancel" bind:confirm="xia_confirm" />
+        <van-datetime-picker show-toolbar type="datetime" value="{{ xia_currentDate }}" min-date="{{ xia_minDate }}" max-date="{{ xia_maxDate }}" bind:cancel="closexia" bind:confirm="xia_confirm" />
     </van-popup>
+    <!-- 添加 -->
     <view class="tian">
         <van-cell label="选填" title="添加照片" border="{{ false }}" />
     </view>
     <view style="padding:0 0 0 4vw">
         <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
     </view>
+    <!-- 提醒 -->
     <view class="ti">
         <van-cell label="建议开启" title="智能提醒" value="" center border="{{ false }}">
             <van-switch checked="{{ checked }}" size="20px" bind:change="oChange" />
         </van-cell>
     </view>
-    <view class="mei">
-        <van-button bind:click="push_mei" round color="linear-gradient(to right,rgba(255, 115, 90,0.85), rgba(255, 187, 0,0.85))" custom-style=" width: 670rpx;height: 80rpx;">
+    <!-- 提交 -->
+    <!-- 禁用按钮 -->
+    <view class="wancheng_jin" wx:if="{{wancheng_jin}}">
+        <view class="wan_jin">完 成</view>
+    </view>
+    <!-- 启用 -->
+    <view class="wancheng" wx:else="{{wancheng}}">
+        <van-button bind:click="push_wan" round color="linear-gradient(to right,rgba(255, 115, 90,0.85), rgba(255, 187, 0,0.85))" custom-style=" width: 670rpx;height: 80rpx;">
             完 成
         </van-button>
     </view>
+    <van-dialog id="van-dialog" />
 </view>

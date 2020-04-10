@@ -1,53 +1,62 @@
 <!-- miniprogram/pages/yaoyu_bian/yaoyu_bian.wxml -->
 <view class="con_yiyao">
+    <!-- 宠物 -->
     <view class="xuan">
-        <van-cell title="选择宠物" value="" clickable center bind:click="openchong" border="{{ false }}" />
+        <van-cell title="选择宠物" value="{{xuan_chong}}" clickable center bind:click="openchong" border="{{ false }}" />
     </view>
     <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xuan_popup }}" position="bottom" bind:close="closechong">
-        <van-picker show-toolbar columns="{{ chong_columns }}" bind:cancel="chong_cancel" bind:confirm="chong_confirm" />
+        <van-picker show-toolbar columns="{{ chong_columns }}" bind:cancel="closechong" bind:confirm="chong_confirm" />
     </van-popup>
+    <!-- 药浴 -->
     <view class="shi">
-        <van-cell title="药浴时间" value="" clickable center bind:click="openzhu" border="{{ false }}" />
+        <van-cell title="药浴时间" value="{{yao_time}}" clickable center bind:click="openyao" border="{{ false }}" />
     </view>
-    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ zhu_popup }}" position="bottom" bind:close="closezhu">
-        <van-datetime-picker show-toolbar type="date" value="{{ currentDate }}" min-date="{{ minDate }}" bind:input="zhuInput" bind:cancel="zhu_cancel" bind:confirm="zhu_confirm" />
+    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ yao_popup }}" position="bottom" bind:close="closeyao">
+        <van-datetime-picker show-toolbar type="datetime" value="{{ yao_currentDate }}" min-date="{{ yao_minDate }}" max-date="{{yao_maxDate}}" bind:cancel="closeyao" bind:confirm="yao_confirm" />
     </van-popup>
+    <!-- 反应 -->
     <view class="hou">
-        <van-cell title="后期反应" value="" clickable center bind:click="openfan" border="{{ false }}" />
+        <van-cell title="后期反应" value="{{fan_hou}}" clickable center bind:click="openfan" border="{{ false }}" />
     </view>
     <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ fan_popup }}" position="bottom" bind:close="closefan">
-        <van-picker show-toolbar columns="{{ fan_columns }}" bind:cancel="fan_cancel" bind:confirm="fan_confirm" />
+        <van-picker show-toolbar columns="{{ fan_columns }}" bind:cancel="closefan" bind:confirm="fan_confirm" />
     </van-popup>
+    <!-- 下次 -->
     <view class="xia">
-        <van-cell title="下次时间" value="" clickable center bind:click="openxia" border="{{ false }}" />
+        <van-cell title="下次时间" value="{{xia_time}}" clickable center bind:click="openxia" border="{{ false }}" />
     </view>
     <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xia_popup }}" position="bottom" bind:close="closexia">
-        <van-datetime-picker show-toolbar type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:input="xiaInput" bind:cancel="xia_cancel" bind:confirm="xia_confirm" />
+        <van-datetime-picker show-toolbar type="datetime" value="{{ xia_currentDate }}" min-date="{{ xia_minDate }}" max-date="{{ xia_maxDate }}" bind:cancel="closexia" bind:confirm="xia_confirm" />
     </van-popup>
+    <!-- 品名 -->
     <view class="yong">
-        <van-field value="{{ pin_value }}" label="用药品名" autosize border="{{ false }}" />
+        <van-field maxlength="15" value="{{ id_pai }}" clickable label="用药品名" input-align="right" border="{{ false }}" bind:input="Input_pai" />
     </view>
+    <!-- 病变 -->
     <view class="bing">
         <van-cell label="选填" title="病变部位" border="{{ false }}" />
     </view>
     <view style="padding:0 0 0 4vw">
         <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
     </view>
+    <!-- 提醒 -->
     <view class="ti">
         <van-cell label="建议开启" title="智能提醒" value="" center border="{{ false }}">
             <van-switch checked="{{ checked }}" size="20px" bind:change="oChange" />
         </van-cell>
     </view>
-     <view class="guanli">
+    <view class="guanli">
         <view class="shanchu">
-            <van-button plain  round color="#ff8e38" custom-style="width:230rpx;height:80rpx;">
+            <van-button bind:click="push_delete" plain round color="#ff8e38" custom-style="width:230rpx;height:80rpx;">
                 删 除
             </van-button>
         </view>
         <view class="baocun">
-            <van-button round color="linear-gradient(to bottom right,rgba(255, 115, 90,0.85), rgba(255, 187, 0,0.85))" custom-style="width:230rpx;height:80rpx;">
+            <van-button bind:click="push_wan" round color="linear-gradient(to bottom right,rgba(255, 115, 90,0.85), rgba(255, 187, 0,0.85))" custom-style="width:230rpx;height:80rpx;">
                 保 存
             </van-button>
         </view>
     </view>
+
+    <van-dialog id="van-dialog" />
 </view>

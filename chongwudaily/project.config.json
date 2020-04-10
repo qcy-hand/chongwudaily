@@ -24,7 +24,7 @@
 	},
 	"appid": "wxbde70b007c963cc5",
 	"projectname": "chongwudaily",
-	"libVersion": "2.8.1",
+	"libVersion": "2.8.3",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
@@ -53,36 +53,36 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/meirong/meirong",
-					"pathName": "pages/meirong/meirong",
+					"name": "pages/quchong_note/quchong_note",
+					"pathName": "pages/quchong_note/quchong_note",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/home/home",
-					"pathName": "pages/home/home",
+					"id": 1,
+					"name": "pages/tijian_note/tijian_note",
+					"pathName": "pages/tijian_note/tijian_note",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/dangan/dangan",
-					"pathName": "pages/dangan/dangan",
+					"id": 2,
+					"name": "pages/meirong_note/meirong_note",
+					"pathName": "pages/meirong_note/meirong_note",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/yimiao/yimiao",
-					"pathName": "pages/yimiao/yimiao",
+					"id": 3,
+					"name": "pages/xizao_note/xizao_note",
+					"pathName": "pages/xizao_note/xizao_note",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/dang_tian/dang_tian",
-					"pathName": "pages/dang_tian/dang_tian",
+					"id": 4,
+					"name": "pages/yaoyu_note/yaoyu_note",
+					"pathName": "pages/yaoyu_note/yaoyu_note",
 					"query": "",
 					"scene": null
 				},

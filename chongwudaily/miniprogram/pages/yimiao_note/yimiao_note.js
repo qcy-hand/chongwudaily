@@ -24,7 +24,7 @@ Page({
     ],
 
     //回调数组
-    wardyimiao:[]
+    arryimiao: []
   },
 
   //倒计时
@@ -54,12 +54,15 @@ Page({
     wx.cloud.callFunction({
       name: "yimiao_get",
       success(res) {
+        // let ret = res.result.data
+        // ret.forEach(element => {
+        // });
         that.setData({
-          wardyimiao: res.result.data,
+          arryimiao: res.result.data,
         }, () => {
           wx.hideLoading();
 
-    console.log(res.result.data);
+          console.log(res.result.data);
 
         });
       },
@@ -73,11 +76,17 @@ Page({
       }
     })
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    let that = this;
+    wx.showLoading({
+      title: "加载中...",
+    });
+    that.Getinfo();
+    console.log('取到数据');
   },
 
   /**
@@ -91,12 +100,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    let that = this;
-    wx.showLoading({
-      title: "加载中...",
-    });
-    that.Getinfo();
-    console.log('show取到数据');
+    
   },
 
   /**
