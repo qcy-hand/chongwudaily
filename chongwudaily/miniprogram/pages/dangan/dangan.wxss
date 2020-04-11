@@ -75,6 +75,34 @@
     border-radius:50% ;
     margin: 0 0 0 7rpx;
 }
+
+
+.backnews {
+    height: 85vh;
+    width: 750rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: #505050;
+}
+
+.pickong {
+    margin:0 0 50rpx 0;
+    width: 192rpx;
+    height: 192rpx;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    /* background-color: #fcfcee; */
+}
+
 .add{
     width: 100rpx;
     height: 100rpx;

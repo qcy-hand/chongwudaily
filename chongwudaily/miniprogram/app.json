@@ -12,7 +12,8 @@
     "van-button": "@vant/weapp/button/index",
     "van-icon": "@vant/weapp/icon/index",
     "van-count-down": "@vant/weapp/count-down/index",
-    "van-dialog": "@vant/weapp/dialog/index"
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-loading": "@vant/weapp/loading/index"
   },
   "pages": [
     "pages/home/home",

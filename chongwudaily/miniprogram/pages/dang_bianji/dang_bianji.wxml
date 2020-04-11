@@ -92,4 +92,6 @@
             </van-button>
         </view>
     </view>
+
+    <van-dialog id="van-dialog" />
 </view>

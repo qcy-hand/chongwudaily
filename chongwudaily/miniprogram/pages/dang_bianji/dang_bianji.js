@@ -48,6 +48,8 @@ Page({
 
     //Push
     Timestamp: "", //时间戳 用于排序
+
+    datadata:'',
   },
 
   //获取对应文件的临时地址
@@ -172,7 +174,6 @@ Page({
         nian_popup: false,
         birthday: getdate(a)
       }, () => {
-        that.checking()
       });
     }
   },
