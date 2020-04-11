@@ -99,6 +99,19 @@
 					"pathName": "pages/yimiao_note/yimiao_note",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/dang_tian/dang_tian",
+					"pathName": "pages/dang_tian/dang_tian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/dangan/dangan",
+					"pathName": "pages/dangan/dangan",
+					"scene": null
 				}
 			]
 		}

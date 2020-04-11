@@ -219,10 +219,32 @@
     margin: 1.07vh 0 2.14vh 0;
 }
 
-.wancheng {
+/* 禁用完成按钮 */
+.wancheng_jin {
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2vh 0 3vh 0;
+    padding: 3vh 0 3vh 0;
+}
+
+.wan_jin {
+    width: 670rpx;
+    height: 80rpx;
+    font-size: 14px;
+    line-height: 80rpx;
+    text-align: center;
+    color: rgba(50, 50, 50, 0.3);
+    border-radius: 50px;
+    background-image:linear-gradient(to right, rgba(255, 115, 90, 0.3), rgba(255, 187, 0, 0.3));
+}
+
+/* 完成按钮 */
+.wancheng {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 0 3vh 0;
 
 }

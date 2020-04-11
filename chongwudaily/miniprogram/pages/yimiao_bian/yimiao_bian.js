@@ -236,6 +236,7 @@ Page({
 
   //完成——提交
   push_wan() {
+    let that = this;
     Dialog.confirm({
       message: '改好啦？',
       closeOnClickOverlay: true,
@@ -243,8 +244,8 @@ Page({
       confirmButtonText: "嗯呐"
     }).then(() => {
       console.log('已点击确定');
-      this.Push(); //调用传值函数
-      this.to_note(); //回note页
+      that.Push(); //调用传值函数
+      that.to_note(); //回note页
       wx.showToast({
         title: '成功',
         icon: 'success',

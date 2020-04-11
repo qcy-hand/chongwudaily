@@ -4,28 +4,28 @@
     <view class="xuan">
         <van-cell title="选择宠物" value="{{xuan_chong}}" clickable center bind:click="openchong" border="{{ false }}" />
     </view>
-    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xuan_popup }}" position="bottom" bind:close="closechong">
+    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xuan_popup }}" position="bottom" bind:click-overlay="closechong">
         <van-picker show-toolbar columns="{{ chong_columns }}" bind:cancel="closechong" bind:confirm="chong_confirm" />
     </van-popup>
     <!-- 洗澡 -->
     <view class="xi">
         <van-cell title="洗澡时间" value="{{xi_time}}" clickable center bind:click="openxi" border="{{ false }}" />
     </view>
-    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xi_popup }}" position="bottom" bind:close="closexi">
-        <van-datetime-picker show-toolbar type="datetime" value="{{ xi_currentDate }}" min-date="{{ xi_minDate }}" xi-date="{{yao_maxDate}}" bind:cancel="closexi" bind:confirm="xi_confirm" />
+    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xi_popup }}" position="bottom" bind:click-overlay="closexi">
+        <van-datetime-picker show-toolbar type="datetime" value="{{ xi_currentDate }}" min-date="{{ xi_minDate }}" max-date="{{xi_maxDate}}" bind:cancel="closexi" bind:confirm="xi_confirm" />
     </van-popup>
     <!-- 反应 -->
     <view class="hou">
         <van-cell title="后期反应" value="{{fan_hou}}" clickable center bind:click="openfan" border="{{ false }}" />
     </view>
-    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ fan_popup }}" position="bottom" bind:close="closefan">
+    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ fan_popup }}" position="bottom" bind:click-overlay="closefan">
         <van-picker show-toolbar columns="{{ fan_columns }}" bind:cancel="closefan" bind:confirm="fan_confirm" />
     </van-popup>
     <!-- 下次 -->
     <view class="xia">
         <van-cell title="下次时间" value="{{xia_time}}" clickable center bind:click="openxia" border="{{ false }}" />
     </view>
-    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xia_popup }}" position="bottom" bind:close="closexia">
+    <van-popup round overlay-style="background-color:rgba(0,0,0,0.3)" show="{{ xia_popup }}" position="bottom" bind:click-overlay="closexia">
         <van-datetime-picker show-toolbar type="datetime" value="{{ xia_currentDate }}" min-date="{{ xia_minDate }}" max-date="{{ xia_maxDate }}" bind:cancel="closexia" bind:confirm="xia_confirm" />
     </van-popup>
     <!-- 添加 -->

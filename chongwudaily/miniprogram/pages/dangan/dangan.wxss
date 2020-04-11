@@ -23,17 +23,6 @@
     border-radius: 50%;
     overflow: hidden;
     border: solid 1rpx #707070;
-    z-index: 100;
-}
-.lei_pic{
-    width: 35rpx;
-    height: 35rpx;
-    background-color: #ffffff;
-    border-radius:50% ;
-    position: absolute;
-    left: 163rpx;
-    top: 130rpx;
-    z-index: 101;
 }
 .con_zhu{
     display: flex;
@@ -73,6 +62,18 @@
     margin: 27rpx 0 0 0;
     color: #999999;
 
+}
+.color{
+    display: flex;
+    align-items: center;
+}
+
+.lei_pic{
+    width: 35rpx;
+    height: 37rpx;
+    background-color: #ffffff;
+    border-radius:50% ;
+    margin: 0 0 0 7rpx;
 }
 .add{
     width: 100rpx;

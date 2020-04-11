@@ -1,5 +1,6 @@
 <!-- miniprogram/pages/tianjia/tianjia.wxml -->
 <view class="con_tian">
+    <!-- 添加头像 -->
     <view class="neirong">
         <view class="dangan">
             <van-uploader file-list="{{ fileList }}" max-count="1" bind:after-read="afterRead">
@@ -10,58 +11,85 @@
         </view>
     </view>
     <view class="neirong2">
+        <!-- 种类 -->
         <view class="leixing">
             宠物类型
             <view class="lei_pic">
-                <image src="../../img/mao.png" wx:if="{{mao_cli}}" bindtap="changemao" class="mao_img"></image>
-                <image src="../../img/mao2.png" wx:else class="mao_img"></image>
-                <image src="../../img/gou.png" wx:if="{{gou_cli}}" bindtap="changegou" class="gou_img"></image>
-                <image src="../../img/gou2.png" wx:else class="gou_img"></image>
+                <view style="display: flex;align-items: center;">
+                    <image src="../../img/mao.png" wx:if="{{dog}}" bindtap="changemao" class="mao_img"></image>
+                    <image src="../../img/mao2.png" wx:else class="mao_img"></image>
+                </view>
+                <view style="display: flex;align-items: center;">
+                    <image src="../../img/gou.png" wx:if="{{cat}}" bindtap="changegou" class="gou_img"></image>
+                    <image src="../../img/gou2.png" wx:else class="gou_img"></image>
+                </view>
             </view>
         </view>
+        <!-- 性别 -->
         <view class="xingbie">
             宠物性别
             <view class="bie_he">
-                <view wx:if="{{zi_cli}}" bindtap="changezi" class="wangzi">小王子</view>
-                <view wx:else class="wangzi_c">小王子</view>
-                <view wx:if="{{zhu_cli}}" bindtap="changezhu" class="gongzhu">小公主</view>
-                <view wx:else class="gongzhu_c">小公主</view>
+                <view style="display: flex;align-items: center;">
+                    <view wx:if="{{zhu_cli}}" bindtap="changezi" class="wangzi">小王子</view>
+                    <view wx:else class="wangzi_c">小王子</view>
+                </view>
+                <view style="display: flex;align-items: center;">
+                    <view wx:if="{{zi_cli}}" bindtap="changezhu" class="gongzhu">小公主</view>
+                    <view wx:else class="gongzhu_c">小公主</view>
+                </view>
             </view>
         </view>
+        <!-- 绝育 -->
         <view class="jueyu">
             是否绝育
             <view class="jue_he">
-                <view wx:if="{{yijue_cli}}" bindtap="change_yi" class="yijue">已绝育</view>
-                <view wx:else class="yijue_c">已绝育</view>
-                <view wx:if="{{weijue_cli}}" bindtap="change_wei" class="weijue">未绝育</view>
-                <view wx:else class="weijue_c">未绝育</view>
+                <view style="display: flex;align-items: center;">
+                    <view wx:if="{{weijue_cli}}" bindtap="change_yi" class="yijue">已绝育</view>
+                    <view wx:else class="yijue_c">已绝育</view>
+                </view>
+                <view style="display: flex;align-items: center;">
+                    <view wx:if="{{yijue_cli}}" bindtap="change_wei" class="weijue">未绝育</view>
+                    <view wx:else class="weijue_c">未绝育</view>
+                </view>
             </view>
         </view>
     </view>
+    <!-- 年龄 -->
     <view class="nianling">
-        <van-cell title="出生年月" clickable border="{{ false }}" bind:click="open_nian" />
-        <van-popup show="{{ nian_popup }}" overlay-style="background-color:rgba(0,0,0,0.5)" close-on-click-overlay="{{false}}" position="bottom" round bind:click-overlay="close_nian">
-            <van-datetime-picker type="year-month" value="{{ currentDate }}" min-date="{{ minDate }}" bind:input="nianInput" />
+        <van-cell title="出生年月" value="{{birthday}}" clickable center  border="{{ false }}" bind:click="open_nian" />
+        <van-popup show="{{ nian_popup }}" overlay-style="background-color:rgba(0,0,0,0.5)" position="bottom" round bind:click-overlay="close_nian">
+            <van-datetime-picker show-toolbar type="year-month" value="{{ currentDate }}" min-date="{{ minDate }}" max-data="{{maxDate}}" bind:cancel="close_nian" bind:confirm="nian_confirm" />
         </van-popup>
     </view>
+    <!-- 毛色 -->
     <view class="maose">
-        <van-cell title="宠物毛色" clickable border="{{ false }}" bind:click="open_maose" />
-        <van-popup show="{{ maose_popup }}" overlay-style="background-color:rgba(0,0,0,0.5)" close-on-click-overlay="{{false}}" position="bottom" round bind:click-overlay="close_maose">
-            <van-picker show-toolbar columns="{{ maose_columns }}" bind:cancel="maose_Cancel" bind:confirm="maose_Confirm" />
+        <van-cell title="宠物毛色" value="{{color_mao}}" clickable center border="{{ false }}" bind:click="open_maose" />
+        <van-popup show="{{ maose_popup }}" overlay-style="background-color:rgba(0,0,0,0.5)" position="bottom" round bind:click-overlay="close_maose">
+            <van-picker show-toolbar columns="{{ maose_columns }}" bind:cancel="close_maose" bind:confirm="maose_confirm" />
         </van-popup>
     </view>
+    <!-- 品种 -->
     <view class="pinzhong">
-        <van-field value="{{ pz_value }}" label="宠物品种" autosize  input-align="right" border="{{ false }}" />
+        <van-field maxlength="15" value="{{ pz_value }}" clickable label="宠物品种"  input-align="right" border="{{ false }}" bind:input="Input_pz"/>
     </view>
+    <!-- 体重 -->
     <view class="tizhong">
-        <van-field value="{{ tz_value }}" label="宠物体重" type="number" autosize  input-align="right" border="{{ false }}" />
+        <van-field maxlength="7" value="{{ tz_value }}" clickable label="宠物体重" type="number" input-align="right" border="{{ false }}" bind:input="Input_tz" />
     </view>
+    <!-- 名字 -->
     <view class="nicheng">
-        <van-field value="{{ mz_value }}" label="宠物名字" autosize  input-align="right" border="{{ false }}" />
+        <van-field maxlength="15" value="{{ mz_value }}" clickable label="宠物名字"  input-align="right" border="{{ false }}" bind:input="Input_mz" />
     </view>
-    <view class="wancheng">
-        <van-button bind:click="push" round color="linear-gradient(to right,rgba(255, 115, 90,0.85), rgba(255, 187, 0,0.85))" custom-style=" width: 666rpx;height: 77rpx;" >
+    <!-- 提交 -->
+    <!-- 禁用按钮 -->
+    <view class="wancheng_jin" wx:if="{{wancheng_jin}}">
+        <view class="wan_jin">完 成</view>
+    </view>
+    <!-- 启用 -->
+    <view class="wancheng" wx:else="{{wancheng}}">
+        <van-button bind:click="push_wan" round color="linear-gradient(to right,rgba(255, 115, 90,0.85), rgba(255, 187, 0,0.85))" custom-style=" width: 670rpx;height: 80rpx;">
             完 成
         </van-button>
     </view>
+    <van-dialog id="van-dialog" />
 </view>

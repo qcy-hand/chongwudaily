@@ -1,21 +1,26 @@
 <!-- miniprogram/pages/dangan/dangan.wxml -->
-<view class="dang_an">
+<view class="dang_an" wx:for="{{arrdang}}" wx:key="id">
     <view class="tou" bindtap="to_bianji">
         <view class="tou_tu">
             <view class="tou_png"></view>
-            <image class="lei_pic" src="../../img/mao.png" />
         </view>
         <view class="con_zhu">
             <view class="con_name">
-                <view class="name">超级大黄</view>
-                <image class="sex" src="../../img/xiong.png" />
+                <view class="name">{{item.mz_value}}</view>
+                <image wx:if="{{item.zi_cli}}" class="sex" src="../../img/xiong.png" />
+                <image wx:if="{{item.zhu_cli}}" class="sex" src="../../img/ci.png" />
                 <view class="age">10岁 11个月</view>
-                <view class="kg">23Kg</view>
+                <view class="kg">{{item.tz_value}}Kg</view>
             </view>
             <view class="con_fu">
-                <view class="color">黄白色</view>
-                <view class="sort">阿拉斯加雪橇犬</view>
-                <view class="jueyu">已绝育</view>
+                <view class="color">
+                    {{item.color_mao}}
+                    <image wx:if="{{item.cat}}" class="lei_pic" src="../../img/mao.png" />
+                    <image wx:if="{{item.dog}}" class="lei_pic" src="../../img/gou.png" />
+                </view>
+                <view class="sort">{{item.pz_value}}</view>
+                <view wx:if="{{item.yijue_cli}}" class="jueyu">已绝育</view>
+                <view wx:if="{{item.weijue_cli}}" class="jueyu">未绝育</view>
             </view>
         </view>
     </view>
@@ -24,8 +29,8 @@
             添 加
         </van-button>
     </view> -->
-    <view class="add" bindtap="to_jia">
-        <image src="../../img/j2.png" class="pic_add" />
-        <text>添加</text>
-    </view>
+</view>
+<view class="add" bindtap="to_jia">
+    <image src="../../img/j2.png" class="pic_add" />
+    <text>添加</text>
 </view>

@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    
+    //回调数组
+    arrdang:[]
   },
 
   //档案页点击档案进入编辑页面
@@ -21,12 +23,42 @@ Page({
       url: '../dang_tian/dang_tian'
     });
   },
+//取数据
+Getinfo() {
+  let that = this;
+  wx.cloud.callFunction({
+    name: "dang_get",
+    success(res) {
+      that.setData({
+        arrdang: res.result.data,
+      }, () => {
+        wx.hideLoading();
+
+        console.log(res.result.data);
+
+      });
+    },
+    fail() {
+      wx.hideLoading();
+      wx.showToast({
+        title: '加载错误，请稍后重试!',
+        duration: 1000,
+        icon: "none"
+      })
+    }
+  })
+},
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that = this;
+    wx.showLoading({
+      title: "加载中...",
+    });
+    that.Getinfo();
+    console.log('取到数据');
   },
 
   /**
