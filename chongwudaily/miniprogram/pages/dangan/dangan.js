@@ -40,6 +40,28 @@ Page({
         currentPage: that.data.currentPage,
       },
       success(res) {
+        that.setData({
+          arrdang: res.result.data,
+        }, () => {
+          wx.hideLoading();
+          console.log(res.result.data);
+        });
+      },
+      fail() {
+        wx.hideLoading();
+      }
+    })
+  },
+
+  //上拉加载
+  getonReach() {
+    let that = this;
+    wx.cloud.callFunction({
+      name: "dang_get",
+      data: {
+        currentPage: that.data.currentPage,
+      },
+      success(res) {
         let arrdang = that.data.arrdang.concat(res.result.data); //连接两个数组
         let length = res.result.data.length;
         that.setData({
@@ -47,17 +69,17 @@ Page({
         }, () => {
           wx.hideLoading();
           wx.stopPullDownRefresh();
-          console.log(res.result.data);
         });
         if (length < 10 && res.result.data.length !== 0) {
           that.setData({
             loading: false,
-            end: true,
+            end:true,
           })
         }
       },
       fail() {
         wx.hideLoading();
+        wx.stopPullDownRefresh();
       }
     })
   },
@@ -66,14 +88,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let that = this;
-    wx.showLoading({
-      title: "加载中...",
-      // duration: 2000,
-    });
-    that.Getinfo();
-    console.log('取到数据');
-    
+    // let that = this;
+    // wx.showLoading({
+    //   title: "加载中...",
+    //   // duration: 2000,
+    // });
+    // that.Getinfo();
+    // console.log('取到数据');
+
   },
 
   /**
@@ -87,7 +109,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    let that = this;
+    wx.showLoading({
+      title: "加载中...",
+      // duration: 2000,
+    });
+    that.Getinfo();
+    console.log('取到数据');
   },
 
   /**
@@ -108,8 +136,15 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
     let that = this;
-    let currentPage = that.data.currentPage
+    let currentPage = this.data.currentPage
 
     if (!that.data.end) {
       console.log("触底了");
@@ -117,16 +152,9 @@ Page({
         loading: true,
         currentPage: ++currentPage
       }, () => {
-        that.Getinfo();
+        that.getonReach();
       })
     }
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
   },
 
   /**

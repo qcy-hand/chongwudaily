@@ -38,7 +38,7 @@
 <view class="loading" wx:if="{{loading}}">
     <van-loading type="spinner" color="#505050" size="21px" text-size="12px">正在加载...</van-loading>
 </view>
-<view wx:if="{{end}}" class="newsdown">已经到底了哦~</view>
+<!-- <view  class="newsdown">已经到底了哦~</view> -->
 <view style="height:2vh;"></view>
 <view class="add" bindtap="to_jia">
     <image src="../../img/j2.png" class="pic_add" />
